@@ -1,14 +1,4 @@
 .single {
-    display: flex;
-    width: 100%;
-
-    .singleContainer {
-        flex: 6;
-
-        .main_content {
-            height: calc(100vh - 50px);
-            overflow: auto;
-
             .top {
                 padding: 20px;
                 display: flex;
@@ -96,17 +86,22 @@
             }
         }
 
-        .bottom {
+        .single_table {
+
             -webkit-box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
             box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
-            padding: 20px;
             margin: 10px 20px;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            .title {
+                font-size: 16px;
+                color: lightgray;
+                margin-bottom: 10px;
+            }
         }
-    }
+        
+        
+        
 
-    .title {
-        font-size: 16px;
-        color: lightgray;
-        margin-bottom: 20px;
-    }
-}
+    

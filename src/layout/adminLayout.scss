@@ -1,0 +1,11 @@
+.main-wrapper {
+    display: flex;
+    .layout-wrapper {
+        flex: 6;
+
+        .main_content {
+            height: calc(100vh - 50px);
+            overflow: auto;
+        }
+    }
+}

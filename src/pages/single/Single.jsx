@@ -1,7 +1,5 @@
 import { useState } from "react";
 import Chart from "../../components/chart/Chart";
-import Navbar from "../../components/navbar/Navbar";
-import Sidebar from "../../components/sidebar/Sidebar";
 import List from "../../components/table/Table";
 import "./single.scss";
 
@@ -13,10 +11,7 @@ const Single = () => {
   };
   return (
     <div className="single">
-      <Sidebar isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen} />
-      <div className="singleContainer">
-        <Navbar toggleSidebar={toggleSidebar} />
-        <div className="main_content">
+
           <div className="top">
             <div className="left">
               <div className="editButton">Edit</div>
@@ -52,12 +47,10 @@ const Single = () => {
               <Chart aspect={3 / 1} title="User Spending (Last 6 Months)" />
             </div>
           </div>
-          <div className="bottom">
+          <div className="single_table">
             <h1 className="title">Last transactions</h1>
             <List />
           </div>
-        </div>
-      </div>
     </div>
   );
 };
