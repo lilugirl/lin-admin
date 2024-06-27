@@ -4,10 +4,13 @@ import Widget from "../../components/widget/Widget";
 import Featured from "../../components/featured/Featured";
 import Chart from "../../components/chart/Chart";
 import Table from "../../components/table/Table";
-
+import { useTranslation } from "react-i18next";
 const Home = () => {
+  const { t } = useTranslation();
   return (
     <>
+      {/* <h1>{t("welcome")}</h1>
+      <p>{t("description")}</p> */}
       <div className="widgets">
         <Widget type="user" />
         <Widget type="order" />

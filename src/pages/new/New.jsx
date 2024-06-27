@@ -1,10 +1,13 @@
 import React, { useState } from "react";
-import DriveFloderUploadOutlinedIcon from "@mui/icons-material/DriveFolderUploadOutlined";
+import DriveFolderUploadOutlinedIcon from "@mui/icons-material/DriveFolderUploadOutlined";
+import { useTranslation } from "react-i18next";
 import "./new.scss";
 
 const New = ({ title, inputs }) => {
   const [file, setFile] = useState("");
+  const { t } = useTranslation();
   console.log("file", file);
+
   return (
     <>
       <div className="new_title">{title}</div>
@@ -23,7 +26,7 @@ const New = ({ title, inputs }) => {
           <form>
             <div className="formInput">
               <label htmlFor="file">
-                Image: <DriveFloderUploadOutlinedIcon className="icon" />
+                {t("form.image")}: <DriveFolderUploadOutlinedIcon className="icon" />
               </label>
               <input
                 type="file"
@@ -34,19 +37,17 @@ const New = ({ title, inputs }) => {
                 style={{ display: "none" }}
               />
             </div>
-            {inputs.map((input) => {
-              return (
-                <div className="formInput" key={input.id}>
-                  <label>{input.label}</label>
-                  <input
-                    type={input.type}
-                    placeholder={input.placeholder}
-                    className="inputField"
-                  />
-                </div>
-              );
-            })}
-            <button>Send</button>
+            {inputs.map((input) => (
+              <div className="formInput" key={input.id}>
+                <label>{input.label}</label>
+                <input
+                  type={input.type}
+                  placeholder={input.placeholder}
+                  className="inputField"
+                />
+              </div>
+            ))}
+            <button>{t("form.send")}</button>
           </form>
         </div>
       </div>

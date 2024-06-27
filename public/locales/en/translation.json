@@ -1,0 +1,81 @@
+{
+  "welcome": "Welcome",
+  "description": "This is a simple multilingual React application.",
+  "titles": {
+    "main": "MAIN",
+    "lists": "LISTS",
+    "useful": "USEFUL",
+    "service": "SERVICE",
+    "user": "USER"
+  },
+  "links": {
+    "dashboard": "Dashboard",
+    "users": "Users",
+    "products": "Products",
+    "orders": "Orders",
+    "delivery": "Delivery",
+    "stats": "Stats",
+    "notifications": "Notifications",
+    "systemHealth": "System Health",
+    "logs": "Logs",
+    "settings": "Settings",
+    "profile": "Profile",
+    "logout": "Logout"
+  },
+  "datatable": {
+    "action": "Action",
+    "view": "View",
+    "delete": "Delete",
+    "addNewUser": "Add New User",
+    "addNew": "Add New"
+  },
+  "form": {
+    "addNewUser": "Add New User",
+    "addNewProduct": "Add New Product",
+    "username": "Username",
+    "nameAndSurname": "Name and surname",
+    "email": "Email",
+    "phone": "Phone",
+    "password": "Password",
+    "address": "Address",
+    "country": "Country",
+    "title": "Title",
+    "description": "Description",
+    "category": "Category",
+    "price": "Price",
+    "stock": "Stock",
+    "send": "Send",
+    "image": "Image"
+  },
+  "view_profile": {
+    "editButton": "Edit",
+    "informationTitle": "Information",
+    "emailKey": "Email:",
+    "phoneKey": "Phone:",
+    "addressKey": "Address:",
+    "countryKey": "Country:",
+    "userSpendingChartTitle": "User Spending (Last 6 Months)",
+    "lastTransactionsTitle": "Last transactions"
+  },
+  "widgets": {
+    "usersTitle": "USERS",
+    "ordersTitle": "ORDERS",
+    "earningsTitle": "EARNINGS",
+    "balancesTitle": "BALANCES",
+    "usersLink": "See all users",
+    "ordersLink": "View all orders",
+    "earningsLink": "View net earnings",
+    "balancesLink": "See Details"
+  },
+  "total_revenue": {
+    "title": "Total Revenue",
+    "totalSalesTodayTitle": "Total sales made today",
+    "totalSalesAmount": "$32222",
+    "desc": "Previous transactions processing. Last payments may not be included.",
+    "targetTitle": "Target",
+    "lastWeekTitle": "Last Week",
+    "lastMonthTitle": "Last Month",
+    "positiveArrow": "Up",
+    "negativeArrow": "Down"
+  }
+}

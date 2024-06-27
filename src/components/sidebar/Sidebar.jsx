@@ -14,9 +14,11 @@ import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined
 import { Link } from "react-router-dom";
 import { useContext, useEffect, useState } from "react";
 import { DarkModeContext } from "../../context/darkModeContext";
+import { useTranslation } from "react-i18next";
 
-const Sidebar = ({ isOpen , setIsOpen}) => {
+const Sidebar = ({ isOpen, setIsOpen }) => {
   const { dispatch } = useContext(DarkModeContext);
+  const { t } = useTranslation();
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 768) {
@@ -28,16 +30,18 @@ const Sidebar = ({ isOpen , setIsOpen}) => {
 
     // Call handleResize initially and add event listener for resize
     handleResize();
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     // Clean up event listener on component unmount
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []); // Empty dependency array ensures effect runs only once
 
   return (
-    <div className={`sidebar_auto_close ${isOpen ? "sidebar" : "sidebar_close"}`}>
+    <div
+      className={`sidebar_auto_close ${isOpen ? "sidebar" : "sidebar_close"}`}
+    >
       <div className="top">
         <Link to="/" style={{ textDecoration: "none" }}>
           <span className="logo">linadmin</span>
@@ -46,65 +50,64 @@ const Sidebar = ({ isOpen , setIsOpen}) => {
       <hr />
       <div className="center">
         <ul>
-          <p className="title">MAIN </p>
+          <p className="title">{t("titles.main")}</p>
           <Link to="/" style={{ textDecoration: "none" }}>
             <li>
               <DashboardIcon className="icon" />
-              <span>Dashboard</span>
+              <span>{t("links.dashboard")}</span>
             </li>
           </Link>
-          <p className="title">LISTS</p>
+          <p className="title">{t("titles.lists")}</p>
           <Link to="/users" style={{ textDecoration: "none" }}>
             <li>
               <PersonOutlineIcon className="icon" />
-              <span>Users</span>
+              <span>{t("links.users")}</span>
             </li>
           </Link>
           <Link to="/products" style={{ textDecoration: "none" }}>
             <li>
               <StoreIcon className="icon" />
-              <span>Products</span>
+              <span>{t("links.products")}</span>
             </li>
           </Link>
           <li>
             <CreditCardIcon className="icon" />
-            <span>Orders</span>
+            <span>{t("links.orders")}</span>
           </li>
           <li>
             <LocalShippingIcon className="icon" />
-            <span>Delivery</span>
+            <span>{t("links.delivery")}</span>
           </li>
-          <p className="title">USEFUL</p>
+          <p className="title">{t("titles.useful")}</p>
           <li>
             <InsertChartIcon className="icon" />
-            <span>Stats</span>
+            <span>{t("links.stats")}</span>
           </li>
-
           <li>
             <NotificationsNoneIcon className="icon" />
-            <span>Notifications</span>
+            <span>{t("links.notifications")}</span>
           </li>
-          <p className="title">SERVICE </p>
+          <p className="title">{t("titles.service")}</p>
           <li>
             <SettingsSystemDaydreamOutlinedIcon className="icon" />
-            <span>System Health</span>
+            <span>{t("links.systemHealth")}</span>
           </li>
           <li>
             <PsychologyOutlinedIcon className="icon" />
-            <span>Logs</span>
+            <span>{t("links.logs")}</span>
           </li>
           <li>
             <SettingsApplicationsIcon className="icon" />
-            <span>Settings</span>
+            <span>{t("links.settings")}</span>
           </li>
-          <p className="title">USER </p>
+          <p className="title">{t("titles.user")}</p>
           <li>
             <AccountCircleOutlinedIcon className="icon" />
-            <span>Profile</span>
+            <span>{t("links.profile")}</span>
           </li>
           <li>
             <ExitToAppIcon className="icon" />
-            <span>Logout</span>
+            <span>{t("links.logout")}</span>
           </li>
         </ul>
       </div>
@@ -119,6 +122,88 @@ const Sidebar = ({ isOpen , setIsOpen}) => {
         ></div>
       </div>
     </div>
+    // <div className={`sidebar_auto_close ${isOpen ? "sidebar" : "sidebar_close"}`}>
+    //   <div className="top">
+    //     <Link to="/" style={{ textDecoration: "none" }}>
+    //       <span className="logo">linadmin</span>
+    //     </Link>
+    //   </div>
+    //   <hr />
+    //   <div className="center">
+    //     <ul>
+    //       <p className="title">MAIN </p>
+    //       <Link to="/" style={{ textDecoration: "none" }}>
+    //         <li>
+    //           <DashboardIcon className="icon" />
+    //           <span>Dashboard</span>
+    //         </li>
+    //       </Link>
+    //       <p className="title">LISTS</p>
+    //       <Link to="/users" style={{ textDecoration: "none" }}>
+    //         <li>
+    //           <PersonOutlineIcon className="icon" />
+    //           <span>Users</span>
+    //         </li>
+    //       </Link>
+    //       <Link to="/products" style={{ textDecoration: "none" }}>
+    //         <li>
+    //           <StoreIcon className="icon" />
+    //           <span>Products</span>
+    //         </li>
+    //       </Link>
+    //       <li>
+    //         <CreditCardIcon className="icon" />
+    //         <span>Orders</span>
+    //       </li>
+    //       <li>
+    //         <LocalShippingIcon className="icon" />
+    //         <span>Delivery</span>
+    //       </li>
+    //       <p className="title">USEFUL</p>
+    //       <li>
+    //         <InsertChartIcon className="icon" />
+    //         <span>Stats</span>
+    //       </li>
+
+    //       <li>
+    //         <NotificationsNoneIcon className="icon" />
+    //         <span>Notifications</span>
+    //       </li>
+    //       <p className="title">SERVICE </p>
+    //       <li>
+    //         <SettingsSystemDaydreamOutlinedIcon className="icon" />
+    //         <span>System Health</span>
+    //       </li>
+    //       <li>
+    //         <PsychologyOutlinedIcon className="icon" />
+    //         <span>Logs</span>
+    //       </li>
+    //       <li>
+    //         <SettingsApplicationsIcon className="icon" />
+    //         <span>Settings</span>
+    //       </li>
+    //       <p className="title">USER </p>
+    //       <li>
+    //         <AccountCircleOutlinedIcon className="icon" />
+    //         <span>Profile</span>
+    //       </li>
+    //       <li>
+    //         <ExitToAppIcon className="icon" />
+    //         <span>Logout</span>
+    //       </li>
+    //     </ul>
+    //   </div>
+    //   <div className="bottom">
+    //     <div
+    //       className="colorOption"
+    //       onClick={() => dispatch({ type: "LIGHT" })}
+    //     ></div>
+    //     <div
+    //       className="colorOption"
+    //       onClick={() => dispatch({ type: "DARK" })}
+    //     ></div>
+    //   </div>
+    // </div>
   );
 };
 
