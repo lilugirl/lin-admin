@@ -61,8 +61,10 @@ const MyTable = () => {
     },
   ];
   return (
+    <div className='table_wrapper'>
+
     <TableContainer component={Paper} className="table">
-    <Table sx={{ minWidth: 650 }} size="small" aria-label="simple table">
+    <Table>
       <TableHead>
         <TableRow>
           <TableCell className="tableCell">Tracking ID</TableCell>
@@ -99,6 +101,8 @@ const MyTable = () => {
       </TableBody>
     </Table>
   </TableContainer>
+  </div>
+
   )
 }
 

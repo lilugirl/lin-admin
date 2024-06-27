@@ -12,13 +12,32 @@ import SettingsSystemDaydreamOutlinedIcon from "@mui/icons-material/SettingsSyst
 import PsychologyOutlinedIcon from "@mui/icons-material/PsychologyOutlined";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import { Link } from "react-router-dom";
-import {useContext} from 'react'
+import { useContext, useEffect, useState } from "react";
 import { DarkModeContext } from "../../context/darkModeContext";
 
-const Sidebar = () => {
-  const {dispatch}=useContext(DarkModeContext)
+const Sidebar = ({ isOpen , setIsOpen}) => {
+  const { dispatch } = useContext(DarkModeContext);
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        setIsOpen(false); // Close sidebar for screens <= 768px
+      } else {
+        setIsOpen(true); // Open sidebar for screens > 768px
+      }
+    };
+
+    // Call handleResize initially and add event listener for resize
+    handleResize();
+    window.addEventListener('resize', handleResize);
+
+    // Clean up event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []); // Empty dependency array ensures effect runs only once
+
   return (
-    <div className="sidebar">
+    <div className={`sidebar_auto_close ${isOpen ? "sidebar" : "sidebar_close"}`}>
       <div className="top">
         <Link to="/" style={{ textDecoration: "none" }}>
           <span className="logo">linadmin</span>
@@ -90,8 +109,14 @@ const Sidebar = () => {
         </ul>
       </div>
       <div className="bottom">
-        <div className="colorOption" onClick={()=>dispatch({type:"LIGHT"})}></div>
-        <div className="colorOption" onClick={()=>dispatch({type:"DARK"})}></div>
+        <div
+          className="colorOption"
+          onClick={() => dispatch({ type: "LIGHT" })}
+        ></div>
+        <div
+          className="colorOption"
+          onClick={() => dispatch({ type: "DARK" })}
+        ></div>
       </div>
     </div>
   );

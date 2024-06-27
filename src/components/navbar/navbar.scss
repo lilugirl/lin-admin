@@ -12,7 +12,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    .navbar__toggle-btn {
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
     .search {
       display: flex;
       align-items: center;
@@ -27,6 +31,11 @@
         &::placeholder {
           font-size: 12px;
         }
+      }
+    }
+    @media (max-width: 768px) {
+      .search {
+        display: none;
       }
     }
     .items {
