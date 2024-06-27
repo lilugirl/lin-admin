@@ -8,43 +8,35 @@
       overflow: auto;
 
       .widgets {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
         gap: 20px;
         padding: 20px;
+      }
       
-        @media (max-width: 1200px) {
-          .widget {
-            flex: 1 1 calc(50% - 16px); // 2 columns layout
-          }
+      @media (max-width: 1200px) {
+        .widgets {
+          grid-template-columns: repeat(2, 1fr); /* 2 columns layout */
         }
+      }
       
-        @media (max-width: 768px) {
-          .widget {
-            flex: 1 1 calc(100% - 16px); // 1 column layout
-          }
+      @media (max-width: 768px) {
+        .widgets {
+          grid-template-columns: 1fr; /* 1 column layout */
         }
       }
       .charts {
-        display: flex;
-        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
-        flex-wrap: wrap;
-      
-        @media (max-width: 1200px) {
-          .chart, .featured {
-            flex: 1 1 calc(50% - 20px); // 2 columns layout
-          }
-        }
-      
-        @media (max-width: 768px) {
-          .chart, .featured {
-            flex: 1 1 calc(100% - 20px); // 1 column layout
-          }
-        }
+        padding: 20px;
       }
-      
+
+      @media (max-width: 1200px) {
+        .charts {
+          grid-template-columns: 1fr; /* 2 columns layout */
+        }
+      }      
 
       .listContainer {
         -webkit-box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
