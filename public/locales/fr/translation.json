@@ -1,0 +1,81 @@
+{
+  "welcome": "Bienvenue",
+  "description": "Ceci est une application React multilingue simple.",
+  "titles": {
+    "main": "PRINCIPAL",
+    "lists": "LISTES",
+    "useful": "UTILE",
+    "service": "SERVICE",
+    "user": "UTILISATEUR"
+  },
+  "links": {
+    "dashboard": "Tableau de bord",
+    "users": "Utilisateurs",
+    "products": "Produits",
+    "orders": "Commandes",
+    "delivery": "Livraison",
+    "stats": "Statistiques",
+    "notifications": "Notifications",
+    "systemHealth": "Santé du système",
+    "logs": "Journaux",
+    "settings": "Paramètres",
+    "profile": "Profil",
+    "logout": "Déconnexion"
+  },
+  "datatable": {
+    "action": "Action",
+    "view": "Voir",
+    "delete": "Supprimer",
+    "addNewUser": "Ajouter un nouvel utilisateur",
+    "addNew": "Ajouter nouveau"
+  },
+  "form": {
+    "addNewUser": "Ajouter un nouvel utilisateur",
+    "addNewProduct": "Ajouter un nouveau produit",
+    "username": "Nom d'utilisateur",
+    "nameAndSurname": "Nom et prénom",
+    "email": "Email",
+    "phone": "Téléphone",
+    "password": "Mot de passe",
+    "address": "Adresse",
+    "country": "Pays",
+    "title": "Titre",
+    "description": "Description",
+    "category": "Catégorie",
+    "price": "Prix",
+    "stock": "Action",
+    "send": "Envoyer",
+    "image": "Image"
+  },
+  "view_profile": {
+    "editButton": "Modifier",
+    "informationTitle": "Informations",
+    "emailKey": "Email:",
+    "phoneKey": "Téléphone:",
+    "addressKey": "Adresse:",
+    "countryKey": "Pays:",
+    "userSpendingChartTitle": "Dépenses de l'utilisateur (6 derniers mois)",
+    "lastTransactionsTitle": "Dernières transactions"
+  },
+  "widgets": {
+    "usersTitle": "UTILISATEURS",
+    "ordersTitle": "COMMANDES",
+    "earningsTitle": "GAINS",
+    "balancesTitle": "SOLDES",
+    "usersLink": "Voir tous les utilisateurs",
+    "ordersLink": "Voir toutes les commandes",
+    "earningsLink": "Voir les gains nets",
+    "balancesLink": "Voir les détails"
+  },
+  "total_revenue": {
+    "title": "Revenu total",
+    "totalSalesTodayTitle": "Total des ventes aujourd'hui",
+    "totalSalesAmount": "$32222",
+    "desc": "Traitement des transactions précédentes. Les derniers paiements peuvent ne pas être inclus.",
+    "targetTitle": "Objectif",
+    "lastWeekTitle": "Semaine dernière",
+    "lastMonthTitle": "Mois dernier",
+    "positiveArrow": "Haut",
+    "negativeArrow": "Bas"
+  }
+}

@@ -1,75 +1,127 @@
-.new{
-    display:flex;
-    width:100%;
-    .newContainer{
-        flex:6;
+.new_title {
+    font-size: 24px;
+    color: gray;
+    gap: 20px;
+    padding: 10px;
+    margin: 20px;
+}
 
-        .top,.bottom{
-            -webkit-box-shadow:2px 4px 10px 1px rgba(201,201,201,0.47);
-            box-shadow:2px 4px 10px 1px rgba(201,201,201,0.47);
-            padding:10px;
-            margin:20px;
-            display:flex;
+.new_section {
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    padding: 10px;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr; /* Default to a single column */
+    gap: 20px;
+    padding: 2rem;
 
-            h1{
-                color:lightgray;
-                font-size:20px;
+    .left {
+        text-align: center;
 
-            }
+        img {
+            width: 100%;
+            max-width: 150px;
+            height: auto;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
 
-            .left{
-                flex:1;
-                text-align: center;
-                img{
-                    width:100px;
-                    height:100px;
-                    border-radius: 50%;
-                    object-fit: cover;
-                }
-            }
-            .right{
-                flex:2;
-                form {
-                    display:flex;
-                    flex-wrap:wrap;
-                    gap:30px;
-                    justify-content: space-around;
-                    .formInput{
-                        width:40%;
+    .right {
+        form {
+            display: grid;
+            gap: 20px;
 
-                        label{
-                            display:flex;
-                            align-items: center;
-                            gap:10px;
+            .formInput {
+                display: grid;
+                gap:5px;
 
-                            .icon{
-                                cursor: pointer;
-                            }
-                        }
-                        input{
-                            width:100%;
-                            padding:5px;
-                            border:none;
-                            border-bottom: 1px solid gray;
-                            outline: none;
-                        }
-                    }
+                label {
+                    display: block;
 
-                    button{
-                        width:150px;
-                        padding:10px;
-                        border:none;
-                        background-color: teal;
-                        color:white;
+                    .icon {
                         cursor: pointer;
-                        margin-top:10px;
                     }
                 }
 
-               
+                input.inputField {
+                    padding: 8px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    outline: none;
+                    transition: border-color 0.3s;
+
+                    &:focus {
+                        border-color: teal;
+                    }
+                }
+            }
+
+            button {
+                padding: 10px;
+                border: none;
+                background-color: teal;
+                color: white;
+                cursor: pointer;
+                border-radius: 4px;
+                transition: background-color 0.3s;
+                align-self: center;
+
+                &:hover {
+                    background-color: #00796b;
+                }
             }
         }
+    }
 
-       
+    @media (min-width: 600px) {
+
+        .right form {
+            grid-template-columns: 1fr 1fr; /* Adjust form layout to two columns */
+            gap: 20px;
+
+            .formInput {
+                width: 100%; /* Full width within grid context */
+            }
+
+            button {
+                grid-column: span 2; /* Full width button */
+            }
+        }
+    }
+
+    @media (min-width: 900px) {
+        grid-template-columns: 1fr 2fr; /* Adjust column ratio for larger screens */
+    }
+
+    @media (max-width: 599px) {
+        .right form {
+            grid-template-columns: 1fr; /* Single column layout for form */
+            gap: 20px;
+
+            .formInput {
+                width: 100%; /* Full width within grid context */
+            }
+
+            button {
+                grid-column: span 1; /* Full width button */
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .new_section {
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        padding: 10px;
+        margin: 20px;
+    }
+
+    .right {
+        form {
+            .formInput {
+                width: 100%; /* Stack inputs on smaller screens */
+            }
+        }
     }
 }

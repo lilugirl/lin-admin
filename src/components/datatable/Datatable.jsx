@@ -3,24 +3,30 @@ import { DataGrid } from "@mui/x-data-grid";
 import { userColumns, userRows } from "../../datatablesource";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Datatable = () => {
   const [data, setData] = useState(userRows);
-  const handleDelete=(id)=>{
-    setData(data.filter(item=>item.id!==id))
-  }
+  const { t } = useTranslation();
+
+  const handleDelete = (id) => {
+    setData(data.filter((item) => item.id !== id));
+  };
+
   const actionColumn = [
     {
       field: "action",
-      headerName: "Action",
+      headerName: t("datatable.action"),
       width: 200,
       renderCell: (params) => {
         return (
           <div className="cellAction">
             <Link to="/users/test" style={{ textDecoration: "none" }}>
-              <div className="viewButton">View</div>
+              <div className="viewButton">{t("datatable.view")}</div>
             </Link>
-            <div className="deleteButton" onClick={()=>handleDelete(params.row.id)}>Delete</div>
+            <div className="deleteButton" onClick={() => handleDelete(params.row.id)}>
+              {t("datatable.delete")}
+            </div>
           </div>
         );
       },
@@ -30,9 +36,9 @@ const Datatable = () => {
   return (
     <div className="datatable">
       <div className="datatableTitle">
-        Add New User
+        {t("datatable.addNewUser")}
         <Link to="/users/new" className="link">
-          Add New
+          {t("datatable.addNew")}
         </Link>
       </div>
       <DataGrid
