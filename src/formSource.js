@@ -9,7 +9,7 @@ export const useTranslatedUserInputs = () => {
     { id: 4, label: t("form.phone"), type: "text", placeholder: "+1 234 567 89" },
     { id: 5, label: t("form.password"), type: "password" },
     { id: 6, label: t("form.address"), type: "text", placeholder: "Elton St. 216 NewYork" },
-    { id: 7, label: t("form.country"), type: "text", placeholder: "USA" }
+    { id: 7, label: t("form.country"), type: "text", placeholder: "USA" },
   ];
 };
 

@@ -70,7 +70,12 @@
         }
     }
 
-    input {
+    input,
+    .maltiSelect,
+    select,
+    .css-13cymwt-control,
+    textarea {
         background-color: transparent;
+        color: #999;
     }
 }
