@@ -134,6 +134,15 @@
             "countryCode": "USA",
             "postalCode": "12345",
             "comments": "No comments"
+        },
+        {
+            "addressType": "Home",
+            "house": "123",
+            "street": "Main St",
+            "city": "Anytown",
+            "countryCode": "USA",
+            "postalCode": "12345",
+            "comments": "No comments"
         }
     ]
 }
