@@ -10,16 +10,19 @@
 
         .gernal_information_section {
             box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
-            padding: 10px;
             margin: 20px;
             display: grid;
             grid-template-columns: 1fr; /* Default to a single column */
             gap: 20px;
-            padding: 2rem;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+
             .sub_section_title {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                padding: 2rem;
+                border-bottom: 1px solid #ccc;
 
                 > div {
                     display: flex;
@@ -33,6 +36,7 @@
                 display: grid;
                 grid-template-columns: 1fr; /* Default to a single column */
                 gap: 15px;
+                padding: 0 2rem 2rem 2rem;
                 .left {
                     text-align: center;
 
@@ -70,6 +74,9 @@
                             &:focus {
                                 border-color: teal;
                             }
+                            &:focus-visible {
+                                border-color: teal;
+                            }
                         }
                     }
 
@@ -93,6 +100,9 @@
                             transition: border-color 0.3s;
 
                             &:focus {
+                                border-color: teal;
+                            }
+                            &:focus-visible {
                                 border-color: teal;
                             }
                         }
@@ -128,16 +138,19 @@
         }
         .address-section {
             box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
-            padding: 10px;
             margin: 20px;
             display: grid;
             grid-template-columns: 1fr; /* Default to a single column */
             gap: 20px;
-            padding: 2rem;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+
             .sub_section_title {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                padding: 2rem;
+                border-bottom: 1px solid #ccc;
 
                 > div {
                     display: flex;
@@ -163,6 +176,7 @@
                 display: grid;
                 grid-template-columns: 1fr;
                 gap: 15px;
+                padding: 0 2rem 2rem 2rem;
 
                 .input-group {
                     display: flex;
@@ -184,6 +198,9 @@
                         &:focus {
                             border-color: teal;
                         }
+                        &:focus-visible {
+                            border-color: teal;
+                        }
                     }
                 }
 
@@ -201,6 +218,7 @@
             }
             .deleteAddress_btn {
                 text-align: end;
+                padding: 0 2rem 0 2rem;
                 .delete_button {
                     color: crimson;
                     border: 1px dotted rgba(220, 20, 60, 0.6);
@@ -214,16 +232,19 @@
 
         .formations_section {
             box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
-            padding: 2rem;
             margin: 20px;
             display: grid;
             grid-template-columns: 1fr; /* Default to a single column */
             gap: 20px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+
             .sub_section_title {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-
+                padding: 2rem;
+                border-bottom: 1px solid #ccc;
                 > div {
                     display: flex;
                     align-items: center;
@@ -248,6 +269,7 @@
                 display: grid;
                 grid-template-columns: 1fr;
                 gap: 15px;
+                padding: 0 2rem 2rem 2rem;
                 .input-group {
                     label {
                         display: block;
@@ -261,6 +283,9 @@
                         transition: border-color 0.3s;
 
                         &:focus {
+                            border-color: teal;
+                        }
+                        &:focus-visible {
                             border-color: teal;
                         }
                     }
@@ -277,6 +302,9 @@
                         transition: border-color 0.3s;
 
                         &:focus {
+                            border-color: teal;
+                        }
+                        &:focus-visible {
                             border-color: teal;
                         }
                     }
@@ -306,6 +334,8 @@
             }
             .deleteAddress_btn {
                 text-align: end;
+                padding: 0 2rem 0 2rem;
+
                 .delete_button {
                     color: crimson;
                     border: 1px dotted rgba(220, 20, 60, 0.6);
@@ -318,16 +348,19 @@
         }
         .experiences_section {
             box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
-            padding: 2rem;
             margin: 20px;
             display: grid;
             grid-template-columns: 1fr; /* Default to a single column */
             gap: 20px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+
             .sub_section_title {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-
+                padding: 2rem;
+                border-bottom: 1px solid #ccc;
                 > div {
                     display: flex;
                     align-items: center;
@@ -352,6 +385,7 @@
                 display: grid;
                 grid-template-columns: 1fr;
                 gap: 15px;
+                padding: 0 2rem 2rem 2rem;
                 .input-group {
                     label {
                         display: block;
@@ -365,6 +399,9 @@
                         transition: border-color 0.3s;
 
                         &:focus {
+                            border-color: teal;
+                        }
+                        &:focus-visible {
                             border-color: teal;
                         }
                     }
@@ -381,6 +418,9 @@
                         transition: border-color 0.3s;
 
                         &:focus {
+                            border-color: teal;
+                        }
+                        &:focus-visible {
                             border-color: teal;
                         }
                     }
@@ -410,6 +450,8 @@
             }
             .deleteAddress_btn {
                 text-align: end;
+                padding: 0 2rem 0 2rem;
+
                 .delete_button {
                     color: crimson;
                     border: 1px dotted rgba(220, 20, 60, 0.6);
@@ -426,6 +468,8 @@
                 box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
                 padding: 10px;
                 margin: 20px;
+                border: 1px solid #ccc;
+                border-radius: 20px;
             }
 
             .right {

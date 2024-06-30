@@ -30,11 +30,11 @@ function App() {
             <Route path="login" element={<Login />} />
             {/* { User Routes } */}
             <Route path="users" element={<List />} />
+            <Route path="users/addNewUser" element={<Add_New_User  title={t("form.addNewUser")}  />} />
             <Route path="users/:userId" element={<Edit_New_User />} />
             <Route path="/view/:userId" element={<View_User />} />
             <Route path="/accessrights" element={<AccessRights />} />
             {/* <Route path="users/:userId" element={<Single />} /> */}
-            <Route path="users/addNewUser" element={<Add_New_User  title={t("form.addNewUser")}  />} />
             {/* { Products Routes } */}
             {/* <Route path="products" element={<List />} />
             <Route path="products/:productId" element={<Single />} /> */}

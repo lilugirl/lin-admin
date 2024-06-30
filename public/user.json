@@ -1,5 +1,5 @@
 {
-    "profileImageUrl":"https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+    "profileImageUrl": "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
     "accessRight": "user",
     "username": "johndoe",
     "gender": "male",
@@ -15,11 +15,20 @@
             "degree": "Bachelor of Science",
             "place": "City, Country",
             "year": "2010",
-            "description": "Description of the education",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
             "activities": [
-                { "value": "activity1", "label": "Activity 1" },
-                { "value": "activity2", "label": "Activity 2" },
-                { "value": "activity3", "label": "Activity 3" }
+                {
+                    "value": "activity1",
+                    "label": "Activity 1"
+                },
+                {
+                    "value": "activity2",
+                    "label": "Activity 2"
+                },
+                {
+                    "value": "activity3",
+                    "label": "Activity 3"
+                }
             ],
             "skills": [
                 {
@@ -41,11 +50,20 @@
             "degree": "Bachelor of Science",
             "place": "City, Country",
             "year": "2010",
-            "description": "Description of the education",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
             "activities": [
-                { "value": "activity1", "label": "Activity 1" },
-                { "value": "activity2", "label": "Activity 2" },
-                { "value": "activity3", "label": "Activity 3" }
+                {
+                    "value": "activity1",
+                    "label": "Activity 1"
+                },
+                {
+                    "value": "activity2",
+                    "label": "Activity 2"
+                },
+                {
+                    "value": "activity3",
+                    "label": "Activity 3"
+                }
             ],
             "skills": [
                 {
@@ -83,7 +101,28 @@
                     "label": "Skill 3"
                 }
             ],
-            "description": "Description of the education"
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries."
+        },
+        {
+            "company_name": "XYZ Corp",
+            "designation": "Software Engineer",
+            "start_date": "2015-01-01",
+            "end_date": "2020-01-01",
+            "skills": [
+                {
+                    "value": "skill1",
+                    "label": "Skill 1"
+                },
+                {
+                    "value": "skill2",
+                    "label": "Skill 2"
+                },
+                {
+                    "value": "skill3",
+                    "label": "Skill 3"
+                }
+            ],
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries."
         }
     ],
     "addresses": [

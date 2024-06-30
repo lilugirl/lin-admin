@@ -200,11 +200,11 @@ const Add_New_User = () => {
     <>
       <div className="Add_new_user">
         <form action="">
-          <div className="new_title">{t('form.addNewUser')}</div>
+          <div className="new_title">{t("form.addNewUser")}</div>
           <div className="gernal_information_section">
             <div className="sub_section_title">
               <div>
-                <div className="icon">{<InfoIcon />}</div>
+                <div className="icon">{<InfoIcon style={{ fontSize: '2rem' }} />}</div>
                 <div>{"General informations"}</div>
               </div>
             </div>
@@ -357,7 +357,7 @@ const Add_New_User = () => {
             <div className="sub_section_title">
               <div>
                 <div className="icon">
-                  <AddLocationIcon />
+                  <AddLocationIcon style={{ fontSize: '2rem' }} />
                 </div>
                 <div>{"Addresses"}</div>
               </div>
@@ -483,7 +483,8 @@ const Add_New_User = () => {
                     />
                   </div>
                 </div>
-                {addresses.length > 1 && ( // Render delete button only if there is more than one address
+
+                {index !== addresses.length - 1 && addresses.length > 1 && (
                   <hr className="horizental_line" />
                 )}
               </>
@@ -493,7 +494,7 @@ const Add_New_User = () => {
             <div className="sub_section_title">
               <div>
                 <div className="icon">
-                  <SchoolIcon />
+                  <SchoolIcon style={{ fontSize: '2rem' }} />
                 </div>
                 <div>{"Formations"}</div>
               </div>
@@ -593,9 +594,10 @@ const Add_New_User = () => {
                     />
                   </div>
                 </div>
-                {educationList.length > 1 && ( // Render delete button only if there is more than one address
-                  <hr className="horizental_line" />
-                )}
+                {index !== educationList.length - 1 &&
+                  educationList.length > 1 && (
+                    <hr className="horizental_line" />
+                  )}
               </>
             ))}
           </div>
@@ -603,7 +605,7 @@ const Add_New_User = () => {
             <di v className="sub_section_title">
               <div>
                 <div className="icon">
-                  <WorkIcon />
+                  <WorkIcon style={{ fontSize: '2rem' }} />
                 </div>
                 <div>{"Experiences"}</div>
               </div>
@@ -688,9 +690,10 @@ const Add_New_User = () => {
                     />
                   </div>
                 </div>
-                {experienceList.length > 1 && ( // Render delete button only if there is more than one address
-                  <hr className="horizental_line" />
-                )}
+                {index !== experienceList.length - 1 &&
+                  experienceList.length > 1 && (
+                    <hr className="horizental_line" />
+                  )}
               </>
             ))}
           </div>
