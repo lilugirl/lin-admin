@@ -28,12 +28,18 @@
     "view": "View",
     "edit": "Edit",
     "delete": "Delete",
-    "addNewUser": "Add New User",
+    "addNewUser": "New Users",
     "addNew": "Add New"
   },
   "form": {
     "addNewUser": "Add New User",
     "editUser": "Edit User",
+    "viewUser": "View User Details",
+    "generalinformations": "General informations",
+    "addresses": "Addresses",
+    "formations": "Formations",
+    "experiences": "Experiences",
+
     "addNewProduct": "Add New Product",
     "username": "Username",
     "nameAndSurname": "Name and surname",

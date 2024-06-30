@@ -64,7 +64,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
               <span>{t("links.users")}</span>
             </li>
           </Link>
-          <Link to="/rights" style={{ textDecoration: "none" }}>
+          <Link to="/accessrights" style={{ textDecoration: "none" }}>
             <li>
               <PersonOutlineIcon className="icon" />
               <span>{t("links.rights")}</span>

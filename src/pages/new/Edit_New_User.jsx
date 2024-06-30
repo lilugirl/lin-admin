@@ -10,7 +10,9 @@ import AddLocationIcon from "@mui/icons-material/AddLocation";
 import { useParams } from "react-router-dom";
 
 const Edit_New_User = () => {
-  const [file, setFile] = useState("");
+  const [file, setFile] = useState(
+    "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+  );
   const { t } = useTranslation();
   const { userId } = useParams();
   const activitiesOptions = [
@@ -276,7 +278,7 @@ const Edit_New_User = () => {
               <img
                 src={
                   file
-                    ? URL.createObjectURL(file)
+                    ? file
                     : "https://icon-library.com/images/no-image-icon/no-image-icon-0.jpg"
                 }
                 alt=""
@@ -450,11 +452,12 @@ const Edit_New_User = () => {
               )}
               <div className="address-details" key={index}>
                 <div className="input-group">
-                  <label htmlFor={`addressType-${index}`}>
+                  <label htmlFor={`addressType`}>
                     {t("addressSection.addressType")}:{" "}
                   </label>
                   <select
-                    id={`addressType-${index}`}
+                    id={`addressType`}
+                    name="addressType"
                     value={address.addressType}
                     onChange={(e) => handleAddressChange(e, index)}
                   >
@@ -467,13 +470,11 @@ const Edit_New_User = () => {
                   </select>
                 </div>
                 <div className="input-group">
-                  <label htmlFor={`house-${index}`}>
-                    {t("addressSection.house")}:{" "}
-                  </label>
+                  <label htmlFor={`house`}>{t("addressSection.house")}: </label>
                   <input
                     type="text"
-                    id={`house-${index}`}
-                    name={`house-${index}`}
+                    id={`house`}
+                    name={`house`}
                     value={address.house}
                     onChange={(e) => handleAddressChange(e, index)}
                     className="inputField"
@@ -481,13 +482,13 @@ const Edit_New_User = () => {
                   />
                 </div>
                 <div className="input-group">
-                  <label htmlFor={`street-${index}`}>
+                  <label htmlFor={`street`}>
                     {t("addressSection.street")}:{" "}
                   </label>
                   <input
                     type="text"
-                    id={`street-${index}`}
-                    name={`street-${index}`}
+                    id={`street`}
+                    name={`street`}
                     value={address.street}
                     onChange={(e) => handleAddressChange(e, index)}
                     className="inputField"
@@ -495,13 +496,11 @@ const Edit_New_User = () => {
                   />
                 </div>
                 <div className="input-group">
-                  <label htmlFor={`city-${index}`}>
-                    {t("addressSection.city")}:{" "}
-                  </label>
+                  <label htmlFor={`city`}>{t("addressSection.city")}: </label>
                   <input
                     type="text"
-                    id={`city-${index}`}
-                    name={`city-${index}`}
+                    id={`city`}
+                    name={`city`}
                     value={address.city}
                     onChange={(e) => handleAddressChange(e, index)}
                     className="inputField"
@@ -509,13 +508,13 @@ const Edit_New_User = () => {
                   />
                 </div>
                 <div className="input-group">
-                  <label htmlFor={`countryCode-${index}`}>
+                  <label htmlFor={`countryCode`}>
                     {t("addressSection.countryCode")}:{" "}
                   </label>
                   <input
                     type="text"
-                    id={`countryCode-${index}`}
-                    name={`countryCode-${index}`}
+                    id={`countryCode`}
+                    name={`countryCode`}
                     value={address.countryCode}
                     onChange={(e) => handleAddressChange(e, index)}
                     className="inputField"
@@ -523,13 +522,13 @@ const Edit_New_User = () => {
                   />
                 </div>
                 <div className="input-group">
-                  <label htmlFor={`postalCode-${index}`}>
+                  <label htmlFor={`postalCode`}>
                     {t("addressSection.postalCode")}:{" "}
                   </label>
                   <input
                     type="text"
-                    id={`postalCode-${index}`}
-                    name={`postalCode-${index}`}
+                    id={`postalCode`}
+                    name={`postalCode`}
                     value={address.postalCode}
                     onChange={(e) => handleAddressChange(e, index)}
                     className="inputField"
@@ -537,13 +536,13 @@ const Edit_New_User = () => {
                   />
                 </div>
                 <div className="input-group">
-                  <label htmlFor={`comments-${index}`}>
+                  <label htmlFor={`comments`}>
                     {t("addressSection.comments")}:{" "}
                   </label>
                   <input
                     type="text"
-                    id={`comments-${index}`}
-                    name={`comments-${index}`}
+                    id={`comments`}
+                    name={`comments`}
                     value={address.comments}
                     onChange={(e) => handleAddressChange(e, index)}
                     className="inputField"

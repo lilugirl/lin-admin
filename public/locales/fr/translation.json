@@ -28,13 +28,18 @@
     "view": "Voir",
     "edit": "Modifier",
     "delete": "Supprimer",
-    "addNewUser": "Ajouter un nouvel utilisateur",
+    "addNewUser": "Nouveaux utilisateurs",
     "addNew": "Ajouter nouveau"
   },
   "form": {
     "addNewUser": "Ajouter un nouvel utilisateur",
     "editUser": "Modifier l'utilisateur",
+    "viewUser": "Afficher les détails de l'utilisateur",
     "addNewProduct": "Ajouter un nouveau produit",
+    "generalinformations": "Informations générales",
+    "addresses": "Adresses",
+    "formations": "Formations",
+    "experiences": "Expériences",
     "username": "Nom d'utilisateur",
     "nameAndSurname": "Nom et prénom",
     "email": "Email",
@@ -115,7 +120,8 @@
     "countryCode": "Code pays",
     "postalCode": "Code postal",
     "comments": "Commentaires"
-  },"educationSection": {
+  },
+  "educationSection": {
     "school": "École",
     "place": "Lieu",
     "degree": "Diplôme",
@@ -123,7 +129,8 @@
     "activities": "Activités",
     "skills": "Compétences",
     "description": "Description"
-  }, "experiencesSection": {
+  },
+  "experiencesSection": {
     "companyName": "Nom de l'entreprise",
     "designation": "Désignation",
     "startDate": "Date de début",
