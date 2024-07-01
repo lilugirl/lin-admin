@@ -3,7 +3,7 @@
   "description": "Ceci est une application React multilingue simple.",
   "titles": {
     "main": "PRINCIPAL",
-    "lists": "LISTES",
+    "ACCOUNTS": "COMPTES",
     "useful": "UTILE",
     "service": "SERVICE",
     "user": "UTILISATEUR"
@@ -11,6 +11,7 @@
   "links": {
     "dashboard": "Tableau de bord",
     "users": "Utilisateurs",
+    "rights": "Droits",
     "products": "Produits",
     "orders": "Commandes",
     "delivery": "Livraison",
@@ -25,13 +26,20 @@
   "datatable": {
     "action": "Action",
     "view": "Voir",
+    "edit": "Modifier",
     "delete": "Supprimer",
-    "addNewUser": "Ajouter un nouvel utilisateur",
+    "addNewUser": "Nouveaux utilisateurs",
     "addNew": "Ajouter nouveau"
   },
   "form": {
     "addNewUser": "Ajouter un nouvel utilisateur",
+    "editUser": "Modifier l'utilisateur",
+    "viewUser": "Afficher les détails de l'utilisateur",
     "addNewProduct": "Ajouter un nouveau produit",
+    "generalinformations": "Informations générales",
+    "addresses": "Adresses",
+    "formations": "Formations",
+    "experiences": "Expériences",
     "username": "Nom d'utilisateur",
     "nameAndSurname": "Nom et prénom",
     "email": "Email",
@@ -45,6 +53,7 @@
     "price": "Prix",
     "stock": "Action",
     "send": "Envoyer",
+    "update": "Mise à jour",
     "image": "Image"
   },
   "view_profile": {
@@ -77,5 +86,56 @@
     "lastMonthTitle": "Mois dernier",
     "positiveArrow": "Haut",
     "negativeArrow": "Bas"
+  },
+  "personalInfo": {
+    "image": "Image",
+    "username": "Nom d'utilisateur",
+    "nameAndSurname": "Nom et prénom",
+    "email": "Email",
+    "phone": "Téléphone",
+    "password": "Mot de passe",
+    "address": "Adresse",
+    "country": "Pays",
+    "accessRight": "Droit d'accès",
+    "selectAccessRight": "Sélectionner le droit d'accès",
+    "kladeur": "Kladeur",
+    "entrepriseOwner": "Propriétaire d'entreprise",
+    "associationOwner": "Propriétaire d'association",
+    "gender": "Genre",
+    "selectGender": "Sélectionner le genre",
+    "male": "Homme",
+    "female": "Femme",
+    "transgender": "Transgenre",
+    "submit": "Soumettre"
+  },
+  "addressSection": {
+    "addressType": "Type d'adresse",
+    "selectAddressType": "Sélectionnez le type d'adresse",
+    "home": "Domicile",
+    "office": "Bureau",
+    "more": "Autre",
+    "house": "Maison",
+    "street": "Rue",
+    "city": "Ville",
+    "countryCode": "Code pays",
+    "postalCode": "Code postal",
+    "comments": "Commentaires"
+  },
+  "educationSection": {
+    "school": "École",
+    "place": "Lieu",
+    "degree": "Diplôme",
+    "year": "Année",
+    "activities": "Activités",
+    "skills": "Compétences",
+    "description": "Description"
+  },
+  "experiencesSection": {
+    "companyName": "Nom de l'entreprise",
+    "designation": "Désignation",
+    "startDate": "Date de début",
+    "endDate": "Date de fin",
+    "skills": "Compétences",
+    "description": "Description"
   }
 }

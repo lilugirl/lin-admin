@@ -4,6 +4,7 @@ import { userColumns, userRows } from "../../datatablesource";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
 const Datatable = () => {
   const [data, setData] = useState(userRows);
@@ -11,6 +12,14 @@ const Datatable = () => {
 
   const handleDelete = (id) => {
     setData(data.filter((item) => item.id !== id));
+  };
+  const navigate = useNavigate();
+
+  const handleClick = (id) => {
+    navigate(`/users/${id}`);
+  };
+  const handleClick_view = (id) => {
+    navigate(`/view/${id}`);
   };
 
   const actionColumn = [
@@ -21,10 +30,24 @@ const Datatable = () => {
       renderCell: (params) => {
         return (
           <div className="cellAction">
-            <Link to="/users/test" style={{ textDecoration: "none" }}>
-              <div className="viewButton">{t("datatable.view")}</div>
-            </Link>
-            <div className="deleteButton" onClick={() => handleDelete(params.row.id)}>
+            <div
+              className="viewButton"
+              onClick={() => handleClick_view(params.row.id)}
+              style={{ textDecoration: "none", cursor: "pointer" }}
+            >
+              {t("datatable.view")}
+            </div>
+            <div
+              className="viewButton"
+              onClick={() => handleClick(params.row.id)}
+              style={{ textDecoration: "none", cursor: "pointer" }}
+            >
+              {t("datatable.edit")}
+            </div>
+            <div
+              className="deleteButton"
+              onClick={() => handleDelete(params.row.id)}
+            >
               {t("datatable.delete")}
             </div>
           </div>
@@ -37,7 +60,7 @@ const Datatable = () => {
     <div className="datatable">
       <div className="datatableTitle">
         {t("datatable.addNewUser")}
-        <Link to="/users/new" className="link">
+        <Link to="/users/addNewUser" className="link">
           {t("datatable.addNew")}
         </Link>
       </div>

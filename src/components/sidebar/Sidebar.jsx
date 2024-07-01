@@ -57,11 +57,17 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
               <span>{t("links.dashboard")}</span>
             </li>
           </Link>
-          <p className="title">{t("titles.lists")}</p>
+          <p className="title">{t("titles.ACCOUNTS")}</p>
           <Link to="/users" style={{ textDecoration: "none" }}>
             <li>
               <PersonOutlineIcon className="icon" />
               <span>{t("links.users")}</span>
+            </li>
+          </Link>
+          <Link to="/accessrights" style={{ textDecoration: "none" }}>
+            <li>
+              <PersonOutlineIcon className="icon" />
+              <span>{t("links.rights")}</span>
             </li>
           </Link>
           <Link to="/products" style={{ textDecoration: "none" }}>
@@ -122,88 +128,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
         ></div>
       </div>
     </div>
-    // <div className={`sidebar_auto_close ${isOpen ? "sidebar" : "sidebar_close"}`}>
-    //   <div className="top">
-    //     <Link to="/" style={{ textDecoration: "none" }}>
-    //       <span className="logo">linadmin</span>
-    //     </Link>
-    //   </div>
-    //   <hr />
-    //   <div className="center">
-    //     <ul>
-    //       <p className="title">MAIN </p>
-    //       <Link to="/" style={{ textDecoration: "none" }}>
-    //         <li>
-    //           <DashboardIcon className="icon" />
-    //           <span>Dashboard</span>
-    //         </li>
-    //       </Link>
-    //       <p className="title">LISTS</p>
-    //       <Link to="/users" style={{ textDecoration: "none" }}>
-    //         <li>
-    //           <PersonOutlineIcon className="icon" />
-    //           <span>Users</span>
-    //         </li>
-    //       </Link>
-    //       <Link to="/products" style={{ textDecoration: "none" }}>
-    //         <li>
-    //           <StoreIcon className="icon" />
-    //           <span>Products</span>
-    //         </li>
-    //       </Link>
-    //       <li>
-    //         <CreditCardIcon className="icon" />
-    //         <span>Orders</span>
-    //       </li>
-    //       <li>
-    //         <LocalShippingIcon className="icon" />
-    //         <span>Delivery</span>
-    //       </li>
-    //       <p className="title">USEFUL</p>
-    //       <li>
-    //         <InsertChartIcon className="icon" />
-    //         <span>Stats</span>
-    //       </li>
 
-    //       <li>
-    //         <NotificationsNoneIcon className="icon" />
-    //         <span>Notifications</span>
-    //       </li>
-    //       <p className="title">SERVICE </p>
-    //       <li>
-    //         <SettingsSystemDaydreamOutlinedIcon className="icon" />
-    //         <span>System Health</span>
-    //       </li>
-    //       <li>
-    //         <PsychologyOutlinedIcon className="icon" />
-    //         <span>Logs</span>
-    //       </li>
-    //       <li>
-    //         <SettingsApplicationsIcon className="icon" />
-    //         <span>Settings</span>
-    //       </li>
-    //       <p className="title">USER </p>
-    //       <li>
-    //         <AccountCircleOutlinedIcon className="icon" />
-    //         <span>Profile</span>
-    //       </li>
-    //       <li>
-    //         <ExitToAppIcon className="icon" />
-    //         <span>Logout</span>
-    //       </li>
-    //     </ul>
-    //   </div>
-    //   <div className="bottom">
-    //     <div
-    //       className="colorOption"
-    //       onClick={() => dispatch({ type: "LIGHT" })}
-    //     ></div>
-    //     <div
-    //       className="colorOption"
-    //       onClick={() => dispatch({ type: "DARK" })}
-    //     ></div>
-    //   </div>
-    // </div>
   );
 };
 

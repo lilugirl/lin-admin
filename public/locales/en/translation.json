@@ -3,7 +3,7 @@
   "description": "This is a simple multilingual React application.",
   "titles": {
     "main": "MAIN",
-    "lists": "LISTS",
+    "ACCOUNTS": "ACCOUNTS",
     "useful": "USEFUL",
     "service": "SERVICE",
     "user": "USER"
@@ -11,6 +11,7 @@
   "links": {
     "dashboard": "Dashboard",
     "users": "Users",
+    "rights": "Rights",
     "products": "Products",
     "orders": "Orders",
     "delivery": "Delivery",
@@ -25,12 +26,20 @@
   "datatable": {
     "action": "Action",
     "view": "View",
+    "edit": "Edit",
     "delete": "Delete",
-    "addNewUser": "Add New User",
+    "addNewUser": "New Users",
     "addNew": "Add New"
   },
   "form": {
     "addNewUser": "Add New User",
+    "editUser": "Edit User",
+    "viewUser": "View User Details",
+    "generalinformations": "General informations",
+    "addresses": "Addresses",
+    "formations": "Formations",
+    "experiences": "Experiences",
+
     "addNewProduct": "Add New Product",
     "username": "Username",
     "nameAndSurname": "Name and surname",
@@ -45,6 +54,7 @@
     "price": "Price",
     "stock": "Stock",
     "send": "Send",
+    "update": "Update",
     "image": "Image"
   },
   "view_profile": {
@@ -77,5 +87,56 @@
     "lastMonthTitle": "Last Month",
     "positiveArrow": "Up",
     "negativeArrow": "Down"
+  },
+  "personalInfo": {
+    "image": "Image",
+    "username": "Username",
+    "nameAndSurname": "Name and Surname",
+    "email": "Email",
+    "phone": "Phone",
+    "password": "Password",
+    "address": "Address",
+    "country": "Country",
+    "accessRight": "Access Right",
+    "selectAccessRight": "Select Access Right",
+    "kladeur": "Kladeur",
+    "entrepriseOwner": "Entreprise Owner",
+    "associationOwner": "Association Owner",
+    "gender": "Gender",
+    "selectGender": "Select Gender",
+    "male": "Male",
+    "female": "Female",
+    "transgender": "Transgender",
+    "submit": "Submit"
+  },
+  "addressSection": {
+    "addressType": "Address Type",
+    "selectAddressType": "Select Address Type",
+    "home": "Home",
+    "office": "Office",
+    "more": "More",
+    "house": "House",
+    "street": "Street",
+    "city": "City",
+    "countryCode": "Country Code",
+    "postalCode": "Postal Code",
+    "comments": "Comments"
+  },
+  "educationSection": {
+    "school": "School",
+    "place": "Place",
+    "degree": "Degree",
+    "year": "Year",
+    "activities": "Activities",
+    "skills": "Skills",
+    "description": "Description"
+  },
+  "experiencesSection": {
+    "companyName": "Company Name",
+    "designation": "Designation",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "skills": "Skills",
+    "description": "Description"
   }
 }
