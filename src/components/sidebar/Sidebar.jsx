@@ -64,25 +64,35 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
               <span>{t("links.users")}</span>
             </li>
           </Link>
-          <Link to="/accessrights" style={{ textDecoration: "none" }}>
-            <li>
-              <PersonOutlineIcon className="icon" />
-              <span>{t("links.rights")}</span>
-            </li>
-          </Link>
           <Link to="/products" style={{ textDecoration: "none" }}>
             <li>
               <StoreIcon className="icon" />
-              <span>{t("links.products")}</span>
+              <span>{t("links.kladers")}</span>
             </li>
           </Link>
           <li>
             <CreditCardIcon className="icon" />
-            <span>{t("links.orders")}</span>
+            <span>{t("links.companies")}</span>
+          </li>
+          <li>
+            <AccountCircleOutlinedIcon className="icon" />
+            <span>{t("links.associations")}</span>
           </li>
           <li>
             <LocalShippingIcon className="icon" />
-            <span>{t("links.delivery")}</span>
+            <span>{t("links.experts")}</span>
+          </li>
+          <li>
+            <LocalShippingIcon className="icon" />
+            <span>{t("links.groups")}</span>
+          </li>
+          <li>
+            <LocalShippingIcon className="icon" />
+            <span>{t("links.patents")}</span>
+          </li>
+          <li>
+            <LocalShippingIcon className="icon" />
+            <span>{t("links.klads")}</span>
           </li>
           <p className="title">{t("titles.useful")}</p>
           <li>
@@ -94,6 +104,12 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
             <span>{t("links.notifications")}</span>
           </li>
           <p className="title">{t("titles.service")}</p>
+          <Link to="/accessrights" style={{ textDecoration: "none" }}>
+            <li>
+              <PersonOutlineIcon className="icon" />
+              <span>{t("links.rights")}</span>
+            </li>
+          </Link>
           <li>
             <SettingsSystemDaydreamOutlinedIcon className="icon" />
             <span>{t("links.systemHealth")}</span>
