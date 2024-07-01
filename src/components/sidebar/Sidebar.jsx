@@ -15,8 +15,9 @@ import { Link } from "react-router-dom";
 import { useContext, useEffect, useState } from "react";
 import { DarkModeContext } from "../../context/darkModeContext";
 import { useTranslation } from "react-i18next";
+import CloseIcon from '@mui/icons-material/Close';
 
-const Sidebar = ({ isOpen, setIsOpen }) => {
+const Sidebar = ({ isOpen, setIsOpen,toggleSidebar }) => {
   const { dispatch } = useContext(DarkModeContext);
   const { t } = useTranslation();
   useEffect(() => {
@@ -46,6 +47,9 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
         <Link to="/" style={{ textDecoration: "none" }}>
           <span className="logo">linadmin</span>
         </Link>
+        <div className="menu_button" onClick={toggleSidebar}>
+        <CloseIcon />
+        </div>
       </div>
       <hr />
       <div className="center">

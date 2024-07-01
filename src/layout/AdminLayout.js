@@ -14,7 +14,7 @@ const AdminLayout = () => {
   };
   return (
     <div className="main-wrapper">
-      <Sidebar isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen} />
+      <Sidebar isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen} toggleSidebar={toggleSidebar} />
       <div className="layout-wrapper">
         <Navbar toggleSidebar={toggleSidebar} />
         <div className="main_content">

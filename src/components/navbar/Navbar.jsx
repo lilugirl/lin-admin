@@ -15,9 +15,6 @@ const Navbar = ({ toggleSidebar }) => {
   const { dispatch } = useContext(DarkModeContext);
   const { i18n } = useTranslation();
 
-  // const changeLanguage = (lng) => {
-  //   i18n.changeLanguage(lng);
-  // };
   const [selectedLanguage, setSelectedLanguage] = useState("English");
   const changeLanguage = (lng) => {
     if (lng === "en") {
