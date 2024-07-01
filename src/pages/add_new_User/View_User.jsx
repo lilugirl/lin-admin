@@ -6,13 +6,13 @@ import SchoolIcon from "@mui/icons-material/School";
 import WorkIcon from "@mui/icons-material/Work";
 import AddLocationIcon from "@mui/icons-material/AddLocation";
 import { useTranslation } from "react-i18next";
-import MyLocationIcon from '@mui/icons-material/MyLocation';
-import HomeIcon from '@mui/icons-material/Home';
-import StreetviewIcon from '@mui/icons-material/Streetview';
-import LocationCityIcon from '@mui/icons-material/LocationCity';
-import LanguageIcon from '@mui/icons-material/Language';
-import MarkAsUnreadIcon from '@mui/icons-material/MarkAsUnread';
-import CommentsDisabledIcon from '@mui/icons-material/CommentsDisabled';
+import MyLocationIcon from "@mui/icons-material/MyLocation";
+import HomeIcon from "@mui/icons-material/Home";
+import StreetviewIcon from "@mui/icons-material/Streetview";
+import LocationCityIcon from "@mui/icons-material/LocationCity";
+import LanguageIcon from "@mui/icons-material/Language";
+import MarkAsUnreadIcon from "@mui/icons-material/MarkAsUnread";
+import CommentsDisabledIcon from "@mui/icons-material/CommentsDisabled";
 const View_User = () => {
   const [userData, setUserData] = useState(null);
   console.log(userData, "userData");
@@ -115,71 +115,67 @@ const View_User = () => {
         {userData.addresses.map((address, index) => (
           <>
             <div className="address_details" key={index}>
-              <div>
-                <div className="input-group">
-                  <div className="icon">
-                    {<MyLocationIcon style={{ fontSize: "2rem" }} />}
-                  </div>
-                  <div>
-                    <label>{t("addressSection.addressType")}</label>
-                    <div>{address.addressType}</div>
-                  </div>
+              <div className="input-group">
+                <div className="icon">
+                  {<MyLocationIcon style={{ fontSize: "2rem" }} />}
                 </div>
-                <div className="input-group">
-                  <div className="icon">
-                    {<HomeIcon style={{ fontSize: "2rem" }} />}
-                  </div>
-                  <div>
-                    <label>{t("addressSection.house")}</label>
-                    <div>{address.house}</div>
-                  </div>
-                </div>
-                <div className="input-group">
-                  <div className="icon">
-                    {<StreetviewIcon style={{ fontSize: "2rem" }} />}
-                  </div>
-                  <div>
-                    <label>{t("addressSection.street")}</label>
-                    <div>{address.street}</div>
-                  </div>
-                </div>
-                <div className="input-group">
-                  <div className="icon">
-                    {<LocationCityIcon style={{ fontSize: "2rem" }} />}
-                  </div>
-                  <div>
-                    <label>{t("addressSection.city")}</label>
-                    <div>{address.city}</div>
-                  </div>
+                <div>
+                  <label>{t("addressSection.addressType")}</label>
+                  <div>{address.addressType}</div>
                 </div>
               </div>
-              <div>
-                <div className="input-group">
-                  <div className="icon">
-                    {<LanguageIcon style={{ fontSize: "2rem" }} />}
-                  </div>
-                  <div>
-                    <label>{t("addressSection.countryCode")}</label>
-                    <div>{address.countryCode}</div>
-                  </div>
+              <div className="input-group">
+                <div className="icon">
+                  {<HomeIcon style={{ fontSize: "1.5rem" }} />}
                 </div>
-                <div className="input-group">
-                  <div className="icon">
-                    {<MarkAsUnreadIcon style={{ fontSize: "2rem" }} />}
-                  </div>
-                  <div>
-                    <label>{t("addressSection.postalCode")}</label>
-                    <div>{address.postalCode}</div>
-                  </div>
+                <div>
+                  <label>{t("addressSection.house")}</label>
+                  <div>{address.house}</div>
                 </div>
-                <div className="input-group">
-                  <div className="icon">
-                    {<CommentsDisabledIcon style={{ fontSize: "2rem" }} />}
-                  </div>
-                  <div>
-                    <label>{t("addressSection.comments")}</label>
-                    <div>{address.comments}</div>
-                  </div>
+              </div>
+              <div className="input-group">
+                <div className="icon">
+                  {<StreetviewIcon style={{ fontSize: "1.5rem" }} />}
+                </div>
+                <div>
+                  <label>{t("addressSection.street")}</label>
+                  <div>{address.street}</div>
+                </div>
+              </div>
+              <div className="input-group">
+                <div className="icon">
+                  {<LocationCityIcon style={{ fontSize: "1.5rem" }} />}
+                </div>
+                <div>
+                  <label>{t("addressSection.city")}</label>
+                  <div>{address.city}</div>
+                </div>
+              </div>
+              <div className="input-group">
+                <div className="icon">
+                  {<LanguageIcon style={{ fontSize: "1.5rem" }} />}
+                </div>
+                <div>
+                  <label>{t("addressSection.countryCode")}</label>
+                  <div>{address.countryCode}</div>
+                </div>
+              </div>
+              <div className="input-group">
+                <div className="icon">
+                  {<MarkAsUnreadIcon style={{ fontSize: "1.5rem" }} />}
+                </div>
+                <div>
+                  <label>{t("addressSection.postalCode")}</label>
+                  <div>{address.postalCode}</div>
+                </div>
+              </div>
+              <div className="input-group">
+                <div className="icon">
+                  {<CommentsDisabledIcon style={{ fontSize: "1.5rem" }} />}
+                </div>
+                <div>
+                  <label>{t("addressSection.comments")}</label>
+                  <div>{address.comments}</div>
                 </div>
               </div>
             </div>

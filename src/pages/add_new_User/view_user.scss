@@ -78,7 +78,7 @@
   }
   .address_details {
     display: grid;
-    grid-template-columns: 1fr; /* Default to a single column */
+    grid-template-columns: 1fr ; /* Default to a single column */
     gap: 15px;
     padding: 0 2rem 2rem 2rem;
     .input-group {
@@ -241,7 +241,7 @@
     }
 
     .address_details {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
     }
     .formations_details,
     .experiences_details {
@@ -368,7 +368,7 @@
     }
 
     .address_details {
-      grid-template-columns: 1fr 1fr; /* Default to a single column */
+      grid-template-columns: 1fr 1fr 1fr 1fr; /* Default to a single column */
     }
     .formations_details,
     .experiences_details {

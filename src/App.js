@@ -10,9 +10,9 @@ import { useTranslation } from "react-i18next";
 import { DarkModeContext } from "./context/darkModeContext";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useTranslatedUserInputs, useTranslatedProductInputs } from "./formSource";
-import Add_New_User from "./pages/new/Add_New_User";
-import Edit_New_User from "./pages/new/Edit_New_User";
-import View_User from "./pages/new/View_User";
+import Add_New_User from "./pages/add_new_User/Add_New_User";
+import Edit_New_User from "./pages/add_new_User/Edit_New_User";
+import View_User from "./pages/add_new_User/View_User";
 import AccessRights from "./pages/accessRights/AccessRights";
 
 function App() {
