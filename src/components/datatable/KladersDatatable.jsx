@@ -1,4 +1,4 @@
-import "./datatable.scss";
+import "./kladesDatatable.scss";
 import { DataGrid } from "@mui/x-data-grid";
 import { userColumns, userRows } from "../../datatablesource";
 import { Link } from "react-router-dom";
@@ -6,7 +6,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 
-const Datatable = () => {
+const KladersDatatable = () => {
   const [data, setData] = useState(userRows);
   const { t } = useTranslation();
 
@@ -16,10 +16,10 @@ const Datatable = () => {
   const navigate = useNavigate();
 
   const handleClick = (id) => {
-    navigate(`/users/${id}`);
+    navigate(`/editkladers/${id}`);
   };
   const handleClick_view = (id) => {
-    navigate(`/view/${id}`);
+    navigate(`/viewkladers/${id}`);
   };
 
   const actionColumn = [
@@ -38,7 +38,7 @@ const Datatable = () => {
               {t("datatable.view")}
             </div>
             <div
-              className="viewButton"
+              className="editButton"
               onClick={() => handleClick(params.row.id)}
               style={{ textDecoration: "none", cursor: "pointer" }}
             >
@@ -59,8 +59,8 @@ const Datatable = () => {
   return (
     <div className="datatable">
       <div className="datatableTitle">
-        {t("datatable.addNewUser")}
-        <Link to="/users/addNewUser" className="link">
+        {t("datatable.newkladers")}
+        <Link to="/add_kladers" className="link">
           {t("datatable.addNew")}
         </Link>
       </div>
@@ -76,4 +76,4 @@ const Datatable = () => {
   );
 };
 
-export default Datatable;
+export default KladersDatatable;

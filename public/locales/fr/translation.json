@@ -31,9 +31,13 @@
     "action": "Action",
     "view": "Voir",
     "edit": "Modifier",
+    "editKlader": "modifier Kladers",
     "delete": "Supprimer",
-    "addNewUser": "Nouveaux utilisateurs",
-    "addNew": "Ajouter nouveau"
+    "addNewUser": "Nouveaux kladers",
+    "addNew": "Ajouter nouveau",
+    "newkladers": "ajouter des kladers",
+    "newKladers": "Nouveaux kladers"
+
   },
   "form": {
     "addNewUser": "Ajouter un nouvel utilisateur",

@@ -68,7 +68,7 @@ const Sidebar = ({ isOpen, setIsOpen,toggleSidebar }) => {
               <span>{t("links.users")}</span>
             </li>
           </Link>
-          <Link to="/products" style={{ textDecoration: "none" }}>
+          <Link to="/kladers" style={{ textDecoration: "none" }}>
             <li>
               <StoreIcon className="icon" />
               <span>{t("links.kladers")}</span>

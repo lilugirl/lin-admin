@@ -2,27 +2,18 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import "./view_user.scss";
 import InfoIcon from "@mui/icons-material/Info";
-import SchoolIcon from "@mui/icons-material/School";
-import WorkIcon from "@mui/icons-material/Work";
-import AddLocationIcon from "@mui/icons-material/AddLocation";
 import { useTranslation } from "react-i18next";
-import MyLocationIcon from "@mui/icons-material/MyLocation";
-import HomeIcon from "@mui/icons-material/Home";
-import StreetviewIcon from "@mui/icons-material/Streetview";
-import LocationCityIcon from "@mui/icons-material/LocationCity";
-import LanguageIcon from "@mui/icons-material/Language";
-import MarkAsUnreadIcon from "@mui/icons-material/MarkAsUnread";
-import CommentsDisabledIcon from "@mui/icons-material/CommentsDisabled";
+
 const View_User = () => {
   const [userData, setUserData] = useState(null);
   console.log(userData, "userData");
   const { t } = useTranslation();
-  const { userId } = useParams();
+  const { Id } = useParams();
 
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        // const response = await fetch(`/api/users/${userId}`);
+        // const response = await fetch(`/api/users/${Id}`);
         const response = await fetch(`/user.json`);
 
         if (!response.ok) {
@@ -37,7 +28,7 @@ const View_User = () => {
     };
 
     fetchUserData();
-  }, [userId]);
+  }, [Id]);
 
   if (!userData) {
     return <div>Loading...</div>;
@@ -102,190 +93,6 @@ const View_User = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="address_section">
-        <div className="sub_section_title">
-          <div>
-            <div className="icon">
-              {<AddLocationIcon style={{ fontSize: "2rem" }} />}
-            </div>
-            <div>{t("form.addresses")}</div>
-          </div>
-        </div>
-        {userData.addresses.map((address, index) => (
-          <>
-            <div className="address_details" key={index}>
-              <div className="input-group">
-                <div className="icon">
-                  {<MyLocationIcon style={{ fontSize: "2rem" }} />}
-                </div>
-                <div>
-                  <label>{t("addressSection.addressType")}</label>
-                  <div>{address.addressType}</div>
-                </div>
-              </div>
-              <div className="input-group">
-                <div className="icon">
-                  {<HomeIcon style={{ fontSize: "1.5rem" }} />}
-                </div>
-                <div>
-                  <label>{t("addressSection.house")}</label>
-                  <div>{address.house}</div>
-                </div>
-              </div>
-              <div className="input-group">
-                <div className="icon">
-                  {<StreetviewIcon style={{ fontSize: "1.5rem" }} />}
-                </div>
-                <div>
-                  <label>{t("addressSection.street")}</label>
-                  <div>{address.street}</div>
-                </div>
-              </div>
-              <div className="input-group">
-                <div className="icon">
-                  {<LocationCityIcon style={{ fontSize: "1.5rem" }} />}
-                </div>
-                <div>
-                  <label>{t("addressSection.city")}</label>
-                  <div>{address.city}</div>
-                </div>
-              </div>
-              <div className="input-group">
-                <div className="icon">
-                  {<LanguageIcon style={{ fontSize: "1.5rem" }} />}
-                </div>
-                <div>
-                  <label>{t("addressSection.countryCode")}</label>
-                  <div>{address.countryCode}</div>
-                </div>
-              </div>
-              <div className="input-group">
-                <div className="icon">
-                  {<MarkAsUnreadIcon style={{ fontSize: "1.5rem" }} />}
-                </div>
-                <div>
-                  <label>{t("addressSection.postalCode")}</label>
-                  <div>{address.postalCode}</div>
-                </div>
-              </div>
-              <div className="input-group">
-                <div className="icon">
-                  {<CommentsDisabledIcon style={{ fontSize: "1.5rem" }} />}
-                </div>
-                <div>
-                  <label>{t("addressSection.comments")}</label>
-                  <div>{address.comments}</div>
-                </div>
-              </div>
-            </div>
-            {index < userData.addresses.length - 1 && (
-              <hr className="horizontal_line" />
-            )}
-          </>
-        ))}
-      </div>
-
-      <div className="formations_section">
-        <div className="sub_section_title">
-          <div>
-            <div className="icon">
-              {<SchoolIcon style={{ fontSize: "2rem" }} />}
-            </div>
-            <div>{t("form.formations")}</div>
-          </div>
-        </div>
-        {userData.educationList.map((education, index) => (
-          <>
-            <div className="formations_details" key={index}>
-              <div className="icon_wrapper">
-                <div className="icon">
-                  {<SchoolIcon style={{ fontSize: "2rem" }} />}
-                </div>
-                <div className="school_wrapper">
-                  <div className="school_heading">{education.school}</div>
-                  <div className="school_place">({education.place})</div>
-                </div>
-              </div>
-              <div>{education.degree}</div>
-              <div className="school_year">
-                Years : <span>{education.year}</span>
-              </div>
-              <div>{education.description}</div>
-              <div className="activity-wrapper">
-                Activities
-                <div className="activity-content">
-                  {education.activities.map((activity, index) => (
-                    <div key={index} className="activity-box">
-                      {activity.label}
-                    </div>
-                  ))}
-                </div>
-              </div>
-              <div className="skills_wrapper">
-                Skills :
-                <div className="skills-content">
-                  {education.skills.map((skills, index) => (
-                    <div key={index} className="skills-box">
-                      {skills.label}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-            {index < userData.educationList.length - 1 && (
-              <hr className="horizontal_line" />
-            )}
-          </>
-        ))}
-      </div>
-      <div className="experiences_section">
-        <div className="sub_section_title">
-          <div>
-            <div className="icon">
-              {<WorkIcon style={{ fontSize: "2rem" }} />}
-            </div>
-            <div>{t("form.experiences")}</div>
-          </div>
-        </div>
-        {userData.experienceList.map((experience, index) => (
-          <>
-            <div className="experiences_details" key={index}>
-              <div className="icon_wrapper">
-                <div className="icon">
-                  {<SchoolIcon style={{ fontSize: "2rem" }} />}
-                </div>
-                <div className="experience_wrapper">
-                  <div className="experience_heading">
-                    {experience.company_name}
-                  </div>
-                  <div className="experience_place">({experience.place})</div>
-                </div>
-              </div>
-              <div className="experience_designation">
-                {experience.designation}
-              </div>
-              <div className="designation_year">
-                <span>{experience.start_date}</span> /{" "}
-                <span>{experience.end_date}</span>
-              </div>
-              <div>{experience.description}</div>
-              <div className="skills_wrapper">
-                Skills :
-                <div className="skills-content">
-                  {experience.skills.map((skills, index) => (
-                    <div key={index} className="skills-box">
-                      {skills.label}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-            {index < userData.experienceList.length - 1 && (
-              <hr className="horizontal_line" />
-            )}
-          </>
-        ))}
       </div>
     </div>
   );
