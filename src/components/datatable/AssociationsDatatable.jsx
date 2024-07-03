@@ -1,4 +1,4 @@
-import "./companyDatatable.scss";
+import "./associationsDatatable.scss";
 import { DataGrid } from "@mui/x-data-grid";
 import { userColumns, userRows } from "../../datatablesource";
 import { Link } from "react-router-dom";
@@ -6,7 +6,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 
-const CompanyDatatable = () => {
+const AssociationsDatatable = () => {
   const [data, setData] = useState(userRows);
   const { t } = useTranslation();
 
@@ -59,9 +59,9 @@ const CompanyDatatable = () => {
   return (
     <div className="datatable">
       <div className="datatableTitle">
-        {t("datatable.newcompany")}
-        <Link to="/addCompany" className="link">
-          {t("datatable.addCompany")}
+        {t("datatable.newAssociation")}
+        <Link to="/addAssociation" className="link">
+          {t("datatable.addAssociations")}
         </Link>
       </div>
       <DataGrid
@@ -76,4 +76,4 @@ const CompanyDatatable = () => {
   );
 };
 
-export default CompanyDatatable;
+export default AssociationsDatatable;

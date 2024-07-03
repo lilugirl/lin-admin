@@ -32,10 +32,14 @@
     "view": "Voir",
     "edit": "Modifier",
     "delete": "Supprimer",
-    "addNewUser": "Ajouter un nouvel utilisateur",
-    "newUsers": "Nouveaux Utilisateurs",
-    "addKladers": "Ajouter de nouveaux kladers",
-    "newkladers": "Nouveaux kladers"
+    "addNewUser": "Ajouter un utilisateur",
+    "newUsers": "Utilisateurs",
+    "addKladers": "Ajouter des kladers",
+    "newkladers": "Kladers",
+    "addCompany": "Ajouter une entreprise",
+    "newcompany": "Entreprises",
+    "addAssociations": "Ajouter des associations",
+    "newAssociation": "Association"
   },
   "form": {
     "addNewUser": "Ajouter un nouvel utilisateur",
@@ -150,7 +154,6 @@
   "companyRegistrationForm": {
     "title": "Enregistrement de l'entreprise",
     "editTitle": "Modifier l'inscription de l'entreprise",
-
     "generalInfo": "Informations générales",
     "companyName": "Nom de l'entreprise",
     "companyRegistrationNumber": "Numéro d'enregistrement de l'entreprise",
@@ -175,5 +178,33 @@
     "terms": "J'accepte les termes et conditions",
     "submit": "Soumettre",
     "update": "Mise à jour"
+  },
+  "associationsRegistrationForm": {
+    "title": "Enregistrer une association",
+    "generalInfo": "Informations générales",
+    "associationName": "Nom de l'association",
+    "registrationNumber": "Numéro d'enregistrement",
+    "industry": "Industrie",
+    "website": "Site web",
+    "description": "Description",
+    "contactName": "Nom du contact",
+    "contactEmail": "Email du contact",
+    "contactPhone": "Téléphone du contact",
+    "address": "Adresse",
+    "city": "Ville",
+    "state": "État",
+    "postalCode": "Code postal",
+    "country": "Pays",
+    "numberOfMembers": "Nombre de membres",
+    "yearFounded": "Année de fondation",
+    "annualBudget": "Budget annuel",
+    "logo": "Logo",
+    "email": "Email",
+    "password": "Mot de passe",
+    "confirmPassword": "Confirmer le mot de passe",
+    "terms": "J'accepte les termes et conditions",
+    "submit": "Soumettre",
+    "required": "Ce champ est obligatoire",
+    "passwordMismatch": "Les mots de passe ne correspondent pas"
   }
 }

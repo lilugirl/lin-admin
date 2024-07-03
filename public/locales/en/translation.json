@@ -32,10 +32,14 @@
     "view": "View",
     "edit": "Edit",
     "delete": "Delete",
-    "addNewUser": "Add New User",
-    "newUsers": "New Users",
-    "addKladers": "Add New kladers",
-    "newkladers": "New Kladers"
+    "addNewUser": "Add User",
+    "newUsers": "Users",
+    "addKladers": "Add kladers",
+    "newkladers": "Kladers",
+    "addCompany": "Add Company",
+    "newcompany": "Companies",
+    "addAssociations":"Add Associations",
+    "newAssociation": "Association"
   },
   "form": {
     "addNewUser": "Add New User",
@@ -174,5 +178,33 @@
     "terms": "I agree to the terms and conditions",
     "submit": "Submit",
     "update":"Update"
+  },
+  "associationsRegistrationForm": {
+    "title": "Register Association",
+    "generalInfo": "General Information",
+    "associationName": "Association Name",
+    "registrationNumber": "Registration Number",
+    "industry": "Industry",
+    "website": "Website",
+    "description": "Description",
+    "contactName": "Contact Name",
+    "contactEmail": "Contact Email",
+    "contactPhone": "Contact Phone",
+    "address": "Address",
+    "city": "City",
+    "state": "State",
+    "postalCode": "Postal Code",
+    "country": "Country",
+    "numberOfMembers": "Number of Members",
+    "yearFounded": "Year Founded",
+    "annualBudget": "Annual Budget",
+    "logo": "Logo",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "terms": "I agree to the terms and conditions",
+    "submit": "Submit",
+    "required": "This field is required",
+    "passwordMismatch": "Passwords do not match"
   }
 }

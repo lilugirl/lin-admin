@@ -2,35 +2,27 @@ import "./App.css";
 import "./style/dark.scss";
 import { useContext } from "react";
 import Home from "./pages/home/Home";
-import List from "./pages/list/UserListing";
 import Login from "./pages/login/Login";
-import Single from "./pages/single/Single";
 import AdminLayout from "./layout/AdminLayout";
-import { useTranslation } from "react-i18next";
 import { DarkModeContext } from "./context/darkModeContext";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import {
-  useTranslatedUserInputs,
-  useTranslatedProductInputs,
-} from "./formSource";
-import Add_New_User from "./pages/user/Add_New_User.jsx";
-import Edit_New_User from "./pages/user/Edit_New_User.jsx";
-import View_User from "./pages/user/View_User.jsx";
+import Add_New_User from "./pages/user/Add_New_User";
+import Edit_New_User from "./pages/user/Edit_New_User";
+import View_User from "./pages/user/View_User";
 import AccessRights from "./pages/accessRights/AccessRights";
-import Add_kladers from "./pages/kladers/Add_kladers.jsx";
-import Edit_kladers from "./pages/kladers/Edit_kladers.jsx";
-import View_kladers from "./pages/kladers/View_kladers.jsx";
+import Add_kladers from "./pages/kladers/Add_kladers";
+import Edit_kladers from "./pages/kladers/Edit_kladers";
+import View_kladers from "./pages/kladers/View_kladers";
 import UserListing from "./pages/list/UserListing";
-import KladersListing from "./pages/list/KladersListing.jsx";
-import CompanyRegistrationForm from "./pages/companies/CompanyRegistrationForm.jsx";
-import EditCompanyForm from "./pages/companies/EditCompanyForm.jsx";
-import CompanyListing from "./pages/list/CompanyListing.jsx";
+import KladersListing from "./pages/list/KladersListing";
+import CompanyRegistrationForm from "./pages/companies/CompanyRegistrationForm";
+import EditCompanyForm from "./pages/companies/EditCompanyForm";
+import CompanyListing from "./pages/list/CompanyListing";
+import AssociationsDatatable from "./components/datatable/AssociationsDatatable";
+import AssociationsRegistrationForm from "./pages/association/AssociationsRegistrationForm";
 
 function App() {
   const { darkMode } = useContext(DarkModeContext);
-  const { t } = useTranslation();
-  const userInputs = useTranslatedUserInputs();
-  const productInputs = useTranslatedProductInputs();
 
   return (
     <div className={darkMode ? "app dark" : "app"}>
@@ -56,14 +48,13 @@ function App() {
             <Route path="/addCompany" element={<CompanyRegistrationForm />} />
             <Route path="/editCompanyForm/:Id" element={<EditCompanyForm />} />
 
+            {/* Company Routes */}
+            <Route path="/associations" element={<AssociationsDatatable />} />
+            <Route path="/addAssociation" element={<AssociationsRegistrationForm />} />
+
+
 
             <Route path="/accessrights" element={<AccessRights />} />
-
-            {/* <Route path="users/:userId" element={<Single />} />
-            {/* { Products Routes } */}
-            {/* <Route path="products" element={<List />} />
-            <Route path="products/:productId" element={<Single />} /> */}
-            {/* <Route path="products/new" element={<New inputs={productInputs} title={t("form.addNewProduct")} />} /> */}
           </Route>
         </Routes>
       </BrowserRouter>
