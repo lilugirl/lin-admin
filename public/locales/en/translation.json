@@ -44,7 +44,7 @@
     "newkladers": "Kladers",
     "addCompany": "Add Company",
     "newcompany": "Companies",
-    "addAssociations":"Add Associations",
+    "addAssociations": "Add Associations",
     "newAssociation": "Association"
   },
   "form": {
@@ -183,10 +183,11 @@
     "confirmPassword": "Confirm Password",
     "terms": "I agree to the terms and conditions",
     "submit": "Submit",
-    "update":"Update"
+    "update": "Update"
   },
   "associationsRegistrationForm": {
     "title": "Register Association",
+    "edittitle":"Edit Association",
     "generalInfo": "General Information",
     "associationName": "Association Name",
     "registrationNumber": "Registration Number",
@@ -210,7 +211,29 @@
     "confirmPassword": "Confirm Password",
     "terms": "I agree to the terms and conditions",
     "submit": "Submit",
+    "update": "Update",
     "required": "This field is required",
     "passwordMismatch": "Passwords do not match"
+  },
+  "create_expertise_profile": {
+    "title": "Register Expertise",
+    "general_info":"General Information",
+    "submit": "Submit",
+    "form": {
+      "biography": "Biography",
+      "company_details":{
+        "companyName": "Company Name",
+        "address": "Address",
+        "website": "Website",
+        "email": "Email",
+        "phoneNumber": "Phone Number",
+        "sirenNumber": "Siren Number"
+      },
+      "add_documents": {
+        "vigilanceCertificate": "Vigilance Certificate",
+        "taxRegularityCertificate": "Certificate of Tax Regularity",
+        "honorCertificate": "Certificate of Honor of Undisguised Work"
+      }
+    }
   }
 }

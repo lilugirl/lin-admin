@@ -19,7 +19,7 @@ const CompanyDatatable = () => {
     navigate(`/editCompanyForm/${id}`);
   };
   const handleClick_view = (id) => {
-    navigate(`/ViewCompanyForm/${id}`);
+    navigate(`/viewCompanyForm/${id}`);
   };
 
   const actionColumn = [

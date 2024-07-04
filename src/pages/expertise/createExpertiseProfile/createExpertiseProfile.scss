@@ -1,5 +1,4 @@
-.Add_Association,
-.Edit_Association{
+.create-expertise-profile {
     form {
         .new_title {
             font-size: 24px;
@@ -9,8 +8,7 @@
             margin: 20px;
         }
 
-        .company_section,
-        .association_section {
+        .expertise_section {
             box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
             margin: 20px;
             display: grid;
@@ -46,8 +44,7 @@
                     }
                 }
             }
-            .company_section_details,
-            .association_section_details {
+            .expertise_section_details {
                 display: grid;
                 grid-template-columns: 1fr;
                 gap: 15px;
@@ -74,7 +71,6 @@
                             border-color: teal;
                         }
                     }
-                    select,
                     input,
                     input[type="text"],
                     input[type="email"] {
@@ -119,10 +115,7 @@
                 }
             }
         }
-
-        .Add_company_submit_btn,
-        .Edit_company_submit_btn,
-        .Register_association_submit_btn {
+        .create_expertise_submit_btn{
             padding: 1rem;
             text-align: end;
             button {

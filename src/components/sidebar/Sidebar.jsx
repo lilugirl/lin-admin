@@ -86,15 +86,19 @@ const Sidebar = ({ isOpen, setIsOpen, toggleSidebar }) => {
               <span>{t("links.associations")}</span>
             </li>
           </Link>
+          <Link to={"/expertise"} style={{ textDecoration: "none" }}>
+            <li>
+              <LocalShippingIcon className="icon" />
+              <span>{t("links.experts")}</span>
+            </li>
+          </Link>
 
-          <li>
-            <LocalShippingIcon className="icon" />
-            <span>{t("links.experts")}</span>
-          </li>
-          <li>
-            <LocalShippingIcon className="icon" />
-            <span>{t("links.groups")}</span>
-          </li>
+          <Link to={"/group"} style={{ textDecoration: "none" }}>
+            <li>
+              <LocalShippingIcon className="icon" />
+              <span>{t("links.groups")}</span>
+            </li>
+          </Link>
           <li>
             <LocalShippingIcon className="icon" />
             <span>{t("links.patents")}</span>
