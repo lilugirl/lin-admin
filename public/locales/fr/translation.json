@@ -32,6 +32,8 @@
     "view": "Voir",
     "edit": "Modifier",
     "delete": "Supprimer",
+    "addNew": "Ajouter nouveau",
+    "designation": "Désignation",
     "addNewUser": "Ajouter un utilisateur",
     "newUsers": "Utilisateurs",
     "addKladers": "Ajouter des kladers",
