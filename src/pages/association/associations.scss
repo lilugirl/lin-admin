@@ -1,0 +1,148 @@
+.Add_Company,
+.Edit_Company,
+.Add_Association {
+    form {
+        .new_title {
+            font-size: 24px;
+            color: gray;
+            gap: 20px;
+            padding: 10px;
+            margin: 20px;
+        }
+
+        .company_section,
+        .association_section {
+            box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+            margin: 20px;
+            display: grid;
+            grid-template-columns: 1fr; /* Default to a single column */
+            gap: 20px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+
+            .sub_section_title {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 2rem;
+                border-bottom: 1px solid #ccc;
+
+                > div {
+                    display: flex;
+                    align-items: center;
+                    .icon {
+                        margin: 5px 10px 0px 0px; /* Adjust margin as needed */
+                    }
+                }
+                .add_button {
+                    background-color: teal; /* Button background color */
+                    color: #fff; /* Button text color */
+                    padding: 8px 16px;
+                    border: none;
+                    cursor: pointer;
+                    border-radius: 2px;
+
+                    &:hover {
+                        background-color: #00796b;
+                    }
+                }
+            }
+            .company_section_details,
+            .association_section_details {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 15px;
+                padding: 0 2rem 2rem 2rem;
+
+                .input-group {
+                    display: flex;
+                    flex-direction: column;
+
+                    label {
+                        margin-bottom: 5px;
+                    }
+                    textarea {
+                        width: 100%;
+                        box-sizing: border-box;
+                        border: 1px solid #ccc;
+                        border-radius: 4px;
+                        transition: border-color 0.3s;
+
+                        &:focus {
+                            border-color: teal;
+                        }
+                        &:focus-visible {
+                            border-color: teal;
+                        }
+                    }
+                    select,
+                    input,
+                    input[type="text"],
+                    input[type="email"] {
+                        width: 100%;
+                        padding: 8px;
+                        box-sizing: border-box;
+                        border: 1px solid #ccc;
+                        border-radius: 4px;
+                        transition: border-color 0.3s;
+
+                        &:focus {
+                            border-color: teal;
+                        }
+                        &:focus-visible {
+                            border-color: teal;
+                        }
+                    }
+                }
+
+                @media (min-width: 600px) {
+                    grid-template-columns: 1fr 1fr;
+
+                    .input-group:nth-child(odd) {
+                        margin-right: 0;
+                    }
+                }
+            }
+            .horizental_line {
+                color: #ccc;
+                opacity: 50%;
+            }
+            .deleteAddress_btn {
+                text-align: end;
+                padding: 0 2rem 0 2rem;
+                .delete_button {
+                    color: crimson;
+                    border: 1px dotted rgba(220, 20, 60, 0.6);
+                    padding: 8px 16px;
+                    cursor: pointer;
+                    border-radius: 4px;
+                    background-color: transparent;
+                }
+            }
+        }
+
+        .Add_company_submit_btn,
+        .Edit_company_submit_btn,
+        .Register_association_submit_btn {
+            padding: 1rem;
+            text-align: end;
+            button {
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-left: 30px;
+                padding-right: 30px;
+                border: none;
+                background-color: teal;
+                color: white;
+                cursor: pointer;
+                border-radius: 4px;
+                transition: background-color 0.3s;
+                align-self: center;
+
+                &:hover {
+                    background-color: #00796b;
+                }
+            }
+        }
+    }
+}

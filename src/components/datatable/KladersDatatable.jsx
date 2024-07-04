@@ -60,8 +60,8 @@ const KladersDatatable = () => {
     <div className="datatable">
       <div className="datatableTitle">
         {t("datatable.newkladers")}
-        <Link to="/add_kladers" className="link">
-          {t("datatable.addNew")}
+        <Link to="/addkladers" className="link">
+          {t("datatable.addKladers")}
         </Link>
       </div>
       <DataGrid

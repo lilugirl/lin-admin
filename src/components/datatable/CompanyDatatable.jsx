@@ -1,4 +1,4 @@
-import "./userDatatable.scss";
+import "./companyDatatable.scss";
 import { DataGrid } from "@mui/x-data-grid";
 import { userColumns, userRows } from "../../datatablesource";
 import { Link } from "react-router-dom";
@@ -6,7 +6,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 
-const UserDatatable = () => {
+const CompanyDatatable = () => {
   const [data, setData] = useState(userRows);
   const { t } = useTranslation();
 
@@ -16,10 +16,10 @@ const UserDatatable = () => {
   const navigate = useNavigate();
 
   const handleClick = (id) => {
-    navigate(`/edituser/${id}`);
+    navigate(`/editCompanyForm/${id}`);
   };
   const handleClick_view = (id) => {
-    navigate(`/viewuser/${id}`);
+    navigate(`/ViewCompanyForm/${id}`);
   };
 
   const actionColumn = [
@@ -59,9 +59,9 @@ const UserDatatable = () => {
   return (
     <div className="datatable">
       <div className="datatableTitle">
-        {t("datatable.newUsers")}
-        <Link to="/addNewUser" className="link">
-          {t("datatable.addNewUser")}
+        {t("datatable.newcompany")}
+        <Link to="/addCompany" className="link">
+          {t("datatable.addCompany")}
         </Link>
       </div>
       <DataGrid
@@ -76,4 +76,4 @@ const UserDatatable = () => {
   );
 };
 
-export default UserDatatable;
+export default CompanyDatatable;

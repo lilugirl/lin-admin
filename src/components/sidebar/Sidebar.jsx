@@ -12,12 +12,12 @@ import SettingsSystemDaydreamOutlinedIcon from "@mui/icons-material/SettingsSyst
 import PsychologyOutlinedIcon from "@mui/icons-material/PsychologyOutlined";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import { Link } from "react-router-dom";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
 import { DarkModeContext } from "../../context/darkModeContext";
 import { useTranslation } from "react-i18next";
-import CloseIcon from '@mui/icons-material/Close';
+import CloseIcon from "@mui/icons-material/Close";
 
-const Sidebar = ({ isOpen, setIsOpen,toggleSidebar }) => {
+const Sidebar = ({ isOpen, setIsOpen, toggleSidebar }) => {
   const { dispatch } = useContext(DarkModeContext);
   const { t } = useTranslation();
   useEffect(() => {
@@ -48,7 +48,7 @@ const Sidebar = ({ isOpen, setIsOpen,toggleSidebar }) => {
           <span className="logo">linadmin</span>
         </Link>
         <div className="menu_button" onClick={toggleSidebar}>
-        <CloseIcon />
+          <CloseIcon />
         </div>
       </div>
       <hr />
@@ -74,14 +74,19 @@ const Sidebar = ({ isOpen, setIsOpen,toggleSidebar }) => {
               <span>{t("links.kladers")}</span>
             </li>
           </Link>
-          <li>
-            <CreditCardIcon className="icon" />
-            <span>{t("links.companies")}</span>
-          </li>
-          <li>
-            <AccountCircleOutlinedIcon className="icon" />
-            <span>{t("links.associations")}</span>
-          </li>
+          <Link to={"/company"} style={{ textDecoration: "none" }}>
+            <li>
+              <CreditCardIcon className="icon" />
+              <span>{t("links.companies")}</span>
+            </li>
+          </Link>
+          <Link to={"/associations"} style={{ textDecoration: "none" }}>
+            <li>
+              <AccountCircleOutlinedIcon className="icon" />
+              <span>{t("links.associations")}</span>
+            </li>
+          </Link>
+
           <li>
             <LocalShippingIcon className="icon" />
             <span>{t("links.experts")}</span>
@@ -148,7 +153,6 @@ const Sidebar = ({ isOpen, setIsOpen,toggleSidebar }) => {
         ></div>
       </div>
     </div>
-
   );
 };
 

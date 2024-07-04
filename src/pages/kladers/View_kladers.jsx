@@ -45,7 +45,7 @@ const View_kladers = () => {
 
   return (
     <div className="View_kladers">
-      <div className="new_title">{t("form.viewUser")}</div>
+      <div className="new_title">{t("form.viewKladers")}</div>
       <div className="general_information_section">
         <div className="sub_section_title">
           <div>

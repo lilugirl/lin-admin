@@ -193,11 +193,13 @@ const Add_kladers = () => {
     <>
       <div className="Add_kladers">
         <form action="">
-          <div className="new_title">{t("form.addNew")}</div>
+          <div className="new_title">{t("form.addKladers")}</div>
           <div className="gernal_information_section">
             <div className="sub_section_title">
               <div>
-                <div className="icon">{<InfoIcon style={{ fontSize: '2rem' }} />}</div>
+                <div className="icon">
+                  {<InfoIcon style={{ fontSize: "2rem" }} />}
+                </div>
                 <div>{"General informations"}</div>
               </div>
             </div>
@@ -350,7 +352,7 @@ const Add_kladers = () => {
             <div className="sub_section_title">
               <div>
                 <div className="icon">
-                  <AddLocationIcon style={{ fontSize: '2rem' }} />
+                  <AddLocationIcon style={{ fontSize: "2rem" }} />
                 </div>
                 <div>{"Addresses"}</div>
               </div>
@@ -487,7 +489,7 @@ const Add_kladers = () => {
             <div className="sub_section_title">
               <div>
                 <div className="icon">
-                  <SchoolIcon style={{ fontSize: '2rem' }} />
+                  <SchoolIcon style={{ fontSize: "2rem" }} />
                 </div>
                 <div>{"Formations"}</div>
               </div>
@@ -598,7 +600,7 @@ const Add_kladers = () => {
             <di v className="sub_section_title">
               <div>
                 <div className="icon">
-                  <WorkIcon style={{ fontSize: '2rem' }} />
+                  <WorkIcon style={{ fontSize: "2rem" }} />
                 </div>
                 <div>{"Experiences"}</div>
               </div>
