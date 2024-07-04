@@ -1,4 +1,4 @@
-.create-expertise-profile {
+.create-group-profile  {
     form {
         .new_title {
             font-size: 24px;
@@ -8,7 +8,7 @@
             margin: 20px;
         }
 
-        .expertise_section {
+        .create-group-profile_section {
             box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
             margin: 20px;
             display: grid;
@@ -44,7 +44,7 @@
                     }
                 }
             }
-            .expertise_section_details {
+            .create-group-profile_section_details{
                 display: grid;
                 grid-template-columns: 1fr;
                 gap: 15px;
@@ -115,7 +115,7 @@
                 }
             }
         }
-        .create_expertise_submit_btn{
+        .create-group-profile_submit_btn{
             padding: 1rem;
             text-align: end;
             button {

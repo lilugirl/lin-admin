@@ -41,7 +41,11 @@
     "addCompany": "Ajouter une entreprise",
     "newcompany": "Entreprises",
     "addAssociations": "Ajouter des associations",
-    "newAssociation": "Association"
+    "newAssociation": "Association",
+    "newExpertise": "Nouvelle Expertise",
+    "createExpertise": "Créer une expertise",
+    "newGroup": "Nouveau Groupe",
+    "createGroup": "Créer un Groupe"
   },
   "form": {
     "addNewUser": "Ajouter un nouvel utilisateur",
@@ -183,7 +187,7 @@
   },
   "associationsRegistrationForm": {
     "title": "Enregistrer une association",
-    "edittitle":"Modifier l'association",
+    "edittitle": "Modifier l'association",
     "generalInfo": "Informations générales",
     "associationName": "Nom de l'association",
     "registrationNumber": "Numéro d'enregistrement",
@@ -212,9 +216,11 @@
     "passwordMismatch": "Les mots de passe ne correspondent pas"
   },
   "create_expertise_profile": {
-    "title": "Enregistrer l'expertise",
+    "title": "Enregistrer un profil d'expertise",
+    "editTitle": "Modifier le profil d'expertise",
     "general_info": "Informations générales",
     "submit": "Soumettre",
+    "update": "Mise à jour",
     "form": {
       "biography": "Biographie",
       "company_details": {
@@ -231,5 +237,21 @@
         "honorCertificate": "Certificat d'honneur de travail non déguisé"
       }
     }
+  },
+  "createGroupProfile": {
+    "createProfileTitle": "Créer un profil de groupe",
+    "editProfileTitle": "modifier le profil du groupe",
+    "generalInformation": "Informations générales",
+    "profilePhoto": "Photo de profil",
+    "groupName": "Nom du groupe*",
+    "fieldOfActivity": "Domaine d'activité*",
+    "subscription": "Abonnement (définissez si le groupe sera payant ou non)",
+    "subscriptionValue": "Définir la valeur de l'abonnement",
+    "email": "Email*",
+    "phoneNumber": "Numéro de téléphone",
+    "website": "Site web",
+    "biography": "Biographie",
+    "submit": "Soumettre",
+    "update": "Mise à jour"
   }
 }

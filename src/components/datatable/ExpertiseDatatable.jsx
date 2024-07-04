@@ -1,13 +1,13 @@
-import "./companyDatatable.scss";
+import "./expertiseDatatable.scss";
 import { DataGrid } from "@mui/x-data-grid";
-import { companyColumns, companyRows } from "../../datatablesource";
+import { userColumns, userRows } from "../../datatablesource";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 
-const CompanyDatatable = () => {
-  const [data, setData] = useState(companyRows);
+const ExpertiseDatatable = () => {
+  const [data, setData] = useState(userRows);
   const { t } = useTranslation();
 
   const handleDelete = (id) => {
@@ -16,10 +16,10 @@ const CompanyDatatable = () => {
   const navigate = useNavigate();
 
   const handleClick = (id) => {
-    navigate(`/editCompanyForm/${id}`);
+    navigate(`/editExpertise/${id}`);
   };
   const handleClick_view = (id) => {
-    navigate(`/viewCompanyForm/${id}`);
+    navigate(`/viewExpertise/${id}`);
   };
 
   const actionColumn = [
@@ -59,15 +59,15 @@ const CompanyDatatable = () => {
   return (
     <div className="datatable">
       <div className="datatableTitle">
-        {t("datatable.newcompany")}
-        <Link to="/addCompany" className="link">
-          {t("datatable.addCompany")}
+        {t("datatable.newExpertise")}
+        <Link to="/createExpertise" className="link">
+          {t("datatable.createExpertise")}
         </Link>
       </div>
       <DataGrid
         className="datagrid"
         rows={data}
-        columns={companyColumns.concat(actionColumn)}
+        columns={userColumns.concat(actionColumn)}
         pageSize={9}
         rowsPerPageOptions={[9]}
         checkboxSelection
@@ -76,4 +76,4 @@ const CompanyDatatable = () => {
   );
 };
 
-export default CompanyDatatable;
+export default ExpertiseDatatable;

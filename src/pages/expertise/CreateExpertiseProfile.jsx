@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Biography from "./Biography";
-import CompanyDetails from "./CompanyDetails";
-import AddDocuments from "./AddDocuments";
+import Biography from "./createExpertiseProfile/Biography";
+import CompanyDetails from "./createExpertiseProfile/CompanyDetails";
+import AddDocuments from "./createExpertiseProfile/AddDocuments";
 import "./createExpertiseProfile.scss";
 import InfoIcon from "@mui/icons-material/Info";
 import { useTranslation } from "react-i18next";
