@@ -1,13 +1,13 @@
 import "./expertiseDatatable.scss";
 import { DataGrid } from "@mui/x-data-grid";
-import { userColumns, userRows } from "../../datatablesource";
+import { groupColumns, groupRows } from "../../datatablesource";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 
 const GroupDatatable = () => {
-  const [data, setData] = useState(userRows);
+  const [data, setData] = useState(groupRows);
   const { t } = useTranslation();
 
   const handleDelete = (id) => {
@@ -67,7 +67,7 @@ const GroupDatatable = () => {
       <DataGrid
         className="datagrid"
         rows={data}
-        columns={userColumns.concat(actionColumn)}
+        columns={groupColumns.concat(actionColumn)}
         pageSize={9}
         rowsPerPageOptions={[9]}
         checkboxSelection
