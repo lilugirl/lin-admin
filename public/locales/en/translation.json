@@ -33,9 +33,11 @@
     "edit": "Edit",
     "delete": "Delete",
     "addNewUser": "New Users",
+    "addNew": "Add New User",
     "newkladers": "New Kladers",
     "editKladers": "Add New",
-    "addKladers": "Add kladers"
+    "addKladers": "Add kladers",
+    "designation":"Designation"
   },
   "form": {
     "addNewUser": "Add New User",
