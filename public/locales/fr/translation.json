@@ -181,6 +181,7 @@
   },
   "associationsRegistrationForm": {
     "title": "Enregistrer une association",
+    "edittitle":"Modifier l'association",
     "generalInfo": "Informations générales",
     "associationName": "Nom de l'association",
     "registrationNumber": "Numéro d'enregistrement",
@@ -204,7 +205,29 @@
     "confirmPassword": "Confirmer le mot de passe",
     "terms": "J'accepte les termes et conditions",
     "submit": "Soumettre",
+    "update": "Mise à jour",
     "required": "Ce champ est obligatoire",
     "passwordMismatch": "Les mots de passe ne correspondent pas"
+  },
+  "create_expertise_profile": {
+    "title": "Enregistrer l'expertise",
+    "general_info": "Informations générales",
+    "submit": "Soumettre",
+    "form": {
+      "biography": "Biographie",
+      "company_details": {
+        "companyName": "Nom de l'entreprise",
+        "address": "Adresse",
+        "website": "Site Web",
+        "email": "Email",
+        "phoneNumber": "Numéro de téléphone",
+        "sirenNumber": "Numéro SIREN"
+      },
+      "add_documents": {
+        "vigilanceCertificate": "Certificat de vigilance",
+        "taxRegularityCertificate": "Certificat de régularité fiscale",
+        "honorCertificate": "Certificat d'honneur de travail non déguisé"
+      }
+    }
   }
 }

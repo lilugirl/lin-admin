@@ -20,6 +20,9 @@ import EditCompanyForm from "./pages/companies/EditCompanyForm";
 import CompanyListing from "./pages/list/CompanyListing";
 import AssociationsDatatable from "./components/datatable/AssociationsDatatable";
 import AssociationsRegistrationForm from "./pages/association/AssociationsRegistrationForm";
+import CreateExpertiseProfile from "./pages/expertise/createExpertiseProfile/CreateExpertiseProfile";
+import CreateGroupProfile from "./pages/createGroupProfile/CreateGroupProfile";
+import EditAssociationsForm from "./pages/association/EditAssociationsForm";
 
 function App() {
   const { darkMode } = useContext(DarkModeContext);
@@ -48,9 +51,16 @@ function App() {
             <Route path="/addCompany" element={<CompanyRegistrationForm />} />
             <Route path="/editCompanyForm/:Id" element={<EditCompanyForm />} />
 
-            {/* Company Routes */}
+            {/* Associations Routes */}
             <Route path="/associations" element={<AssociationsDatatable />} />
             <Route path="/addAssociation" element={<AssociationsRegistrationForm />} />
+            <Route path="/editAssociation/:Id" element={<EditAssociationsForm />} />
+
+            {/* Expertise Routes */}
+            <Route path="/expertise" element={<CreateExpertiseProfile />} />
+
+            {/* Groups Routes */}
+            <Route path="/group" element={<CreateGroupProfile />} />
 
 
 

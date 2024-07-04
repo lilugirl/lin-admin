@@ -16,7 +16,7 @@ const AssociationsDatatable = () => {
   const navigate = useNavigate();
 
   const handleClick = (id) => {
-    navigate(`/editCompanyForm/${id}`);
+    navigate(`/editAssociation/${id}`);
   };
   const handleClick_view = (id) => {
     navigate(`/ViewCompanyForm/${id}`);
