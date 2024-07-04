@@ -1,6 +1,9 @@
 {
   "welcome": "Welcome",
   "description": "This is a simple multilingual React application.",
+  "project":{
+    "name":"MYKLAD"
+  },
   "titles": {
     "main": "MAIN",
     "ACCOUNTS": "ACCOUNTS",

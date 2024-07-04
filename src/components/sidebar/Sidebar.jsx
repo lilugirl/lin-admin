@@ -45,7 +45,7 @@ const Sidebar = ({ isOpen, setIsOpen, toggleSidebar }) => {
     >
       <div className="top">
         <Link to="/" style={{ textDecoration: "none" }}>
-          <span className="logo">linadmin</span>
+          <span className="logo">{t("project.name")}</span>
         </Link>
         <div className="menu_button" onClick={toggleSidebar}>
           <CloseIcon />

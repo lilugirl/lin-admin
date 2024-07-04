@@ -7,9 +7,9 @@ import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 
 const UserDatatable = () => {
-  const [data, setData] = useState(userRows);
   const { t } = useTranslation();
 
+  const [data, setData] = useState(userRows);
   const handleDelete = (id) => {
     setData(data.filter((item) => item.id !== id));
   };

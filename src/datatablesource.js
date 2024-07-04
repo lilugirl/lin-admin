@@ -18,13 +18,13 @@ export const userColumns = [
     {
       field: "email",
       headerName: "Email",
-      width: 230,
+      width: 200,
     },
   
     {
       field: "designation",
       headerName: t("datatable.designation"),
-      width: 100,
+      width: 250,
     },
     {
       field: "status",
@@ -40,7 +40,7 @@ export const userColumns = [
     },
   ];
   
-  //temporary data
+  //temporary data english
   export const userRows = [
     {
       id: 1,
@@ -48,7 +48,7 @@ export const userColumns = [
       img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       status: "active",
       email: "1snow@gmail.com",
-      designation: 35,
+      designation: "General Director",
     },
     {
       id: 2,
@@ -56,7 +56,7 @@ export const userColumns = [
       img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       email: "2snow@gmail.com",
       status: "passive",
-      designation: 42,
+      designation: "Director Information Technology",
     },
     {
       id: 3,
@@ -64,7 +64,7 @@ export const userColumns = [
       img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       email: "3snow@gmail.com",
       status: "pending",
-      designation: 45,
+      designation: "Director Finance",
     },
     {
       id: 4,
@@ -72,7 +72,7 @@ export const userColumns = [
       img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       email: "4snow@gmail.com",
       status: "active",
-      designation: 16,
+      designation: "Director Human Resources",
     },
     {
       id: 5,
@@ -80,7 +80,7 @@ export const userColumns = [
       img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       email: "5snow@gmail.com",
       status: "passive",
-      designation: 22,
+      designation: "Director Sales",
     },
     {
       id: 6,
@@ -88,7 +88,7 @@ export const userColumns = [
       img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       email: "6snow@gmail.com",
       status: "active",
-      designation: 15,
+      designation: "Director Legal",
     },
     {
       id: 7,
@@ -96,7 +96,7 @@ export const userColumns = [
       img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       email: "7snow@gmail.com",
       status: "passive",
-      designation: 44,
+      designation: "Director Expertise",
     },
     {
       id: 8,
@@ -104,7 +104,7 @@ export const userColumns = [
       img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       email: "8snow@gmail.com",
       status: "active",
-      designation: 36,
+      designation: "Frontend Developer",
     },
     {
       id: 9,
@@ -112,7 +112,7 @@ export const userColumns = [
       img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       email: "snow@gmail.com",
       status: "pending",
-      designation: 65,
+      designation: "BackOffice Developer",
     },
     {
       id: 10,
@@ -120,6 +120,6 @@ export const userColumns = [
       img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       email: "snow@gmail.com",
       status: "active",
-      designation: 65,
+      designation: "Design Expert",
     },
   ];
