@@ -37,7 +37,7 @@
     "delete": "Delete",
     "addNew": "Add New User",
     "editKladers": "Add New",
-    "designation":"Designation",
+    "designation": "Designation",
     "addNewUser": "Add User",
     "newUsers": "Users",
     "addKladers": "Add kladers",
@@ -45,7 +45,11 @@
     "addCompany": "Add Company",
     "newcompany": "Companies",
     "addAssociations": "Add Associations",
-    "newAssociation": "Association"
+    "newAssociation": "Association",
+    "newExpertise": "Expertise",
+    "createExpertise": "Create Expertise",
+    "newGroup": "New Group",
+    "createGroup": "Create Group"
   },
   "form": {
     "addNewUser": "Add New User",
@@ -187,7 +191,7 @@
   },
   "associationsRegistrationForm": {
     "title": "Register Association",
-    "edittitle":"Edit Association",
+    "edittitle": "Edit Association",
     "generalInfo": "General Information",
     "associationName": "Association Name",
     "registrationNumber": "Registration Number",
@@ -216,12 +220,14 @@
     "passwordMismatch": "Passwords do not match"
   },
   "create_expertise_profile": {
-    "title": "Register Expertise",
-    "general_info":"General Information",
+    "title": "Register Expertise Profile",
+    "editTitle": "Edit Expertise Profile",
+    "general_info": "General Information",
     "submit": "Submit",
+    "update": "Update",
     "form": {
       "biography": "Biography",
-      "company_details":{
+      "company_details": {
         "companyName": "Company Name",
         "address": "Address",
         "website": "Website",
@@ -235,5 +241,21 @@
         "honorCertificate": "Certificate of Honor of Undisguised Work"
       }
     }
+  },
+  "createGroupProfile": {
+    "createProfileTitle": "Create Group Profile",
+    "editProfileTitle": "Edit Group Profile",
+    "generalInformation": "General Information",
+    "profilePhoto": "Profile Photo",
+    "groupName": "Group Name*",
+    "fieldOfActivity": "Field of Activity*",
+    "subscription": "Subscription (define if the group will be paid or not)",
+    "subscriptionValue": "Define the Subscription Value",
+    "email": "Email*",
+    "phoneNumber": "Phone Number",
+    "website": "Website",
+    "biography": "Biography",
+    "submit": "Submit",
+    "update": "Update"
   }
 }

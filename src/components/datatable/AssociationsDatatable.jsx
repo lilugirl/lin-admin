@@ -1,13 +1,13 @@
 import "./associationsDatatable.scss";
 import { DataGrid } from "@mui/x-data-grid";
-import { userColumns, userRows } from "../../datasets/associationsdatatablesource";
+import { associationColumns, associationRows } from "../../datasets/associationsdatatablesource";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 
-const AssociationsDatatable = () => {
-  const [data, setData] = useState(userRows);
+const AssociationDatatable = () => {
+  const [data, setData] = useState(associationRows);
   const { t } = useTranslation();
 
   const handleDelete = (id) => {
@@ -16,10 +16,10 @@ const AssociationsDatatable = () => {
   const navigate = useNavigate();
 
   const handleClick = (id) => {
-    navigate(`/editAssociation/${id}`);
+    navigate(`/editAssociationForm/${id}`);
   };
   const handleClick_view = (id) => {
-    navigate(`/ViewCompanyForm/${id}`);
+    navigate(`/viewAssociationForm/${id}`);
   };
 
   const actionColumn = [
@@ -67,13 +67,12 @@ const AssociationsDatatable = () => {
       <DataGrid
         className="datagrid"
         rows={data}
-        columns={userColumns.concat(actionColumn)}
+        columns={associationColumns.concat(actionColumn)}
         pageSize={9}
         rowsPerPageOptions={[9]}
-        checkboxSelection
       />
     </div>
   );
 };
 
-export default AssociationsDatatable;
+export default AssociationDatatable;

@@ -1,0 +1,12 @@
+{
+    "profilePhoto": "path/to/photo.jpg",
+    "groupName": "Sample Group",
+    "fieldOfActivity": "Education",
+    "subscription": "Paid",
+    "subscriptionValue": "50",
+    "email": "sample@example.com",
+    "phoneNumber": "123-456-7890",
+    "website": "www.example.com",
+    "biography": "This is a sample biography."
+  }
+  

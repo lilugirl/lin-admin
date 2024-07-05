@@ -26,7 +26,7 @@ const UserDatatable = () => {
     {
       field: "action",
       headerName: t("datatable.action"),
-      width: 200,
+      width: 220,
       renderCell: (params) => {
         return (
           <div className="cellAction">

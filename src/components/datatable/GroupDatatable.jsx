@@ -1,13 +1,13 @@
-import "./companyDatatable.scss";
+import "./expertiseDatatable.scss";
 import { DataGrid } from "@mui/x-data-grid";
-import { companyColumns, companyRows } from "../../datasets/companydatatablesource";
+import { groupColumns, groupRows } from "../../datasets/groupdatatablesource";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 
-const CompanyDatatable = () => {
-  const [data, setData] = useState(companyRows);
+const GroupDatatable = () => {
+  const [data, setData] = useState(groupRows);
   const { t } = useTranslation();
 
   const handleDelete = (id) => {
@@ -16,17 +16,17 @@ const CompanyDatatable = () => {
   const navigate = useNavigate();
 
   const handleClick = (id) => {
-    navigate(`/editCompanyForm/${id}`);
+    navigate(`/editGroupProfile/${id}`);
   };
   const handleClick_view = (id) => {
-    navigate(`/viewCompanyForm/${id}`);
+    navigate(`/viewGroupProfile/${id}`);
   };
 
   const actionColumn = [
     {
       field: "action",
       headerName: t("datatable.action"),
-      width: 220,
+      width: 200,
       renderCell: (params) => {
         return (
           <div className="cellAction">
@@ -59,15 +59,15 @@ const CompanyDatatable = () => {
   return (
     <div className="datatable">
       <div className="datatableTitle">
-        {t("datatable.newcompany")}
-        <Link to="/addCompany" className="link">
-          {t("datatable.addCompany")}
+        {t("datatable.newGroup")}
+        <Link to="/createGroupProfile" className="link">
+          {t("datatable.createGroup")}
         </Link>
       </div>
       <DataGrid
         className="datagrid"
         rows={data}
-        columns={companyColumns.concat(actionColumn)}
+        columns={groupColumns.concat(actionColumn)}
         pageSize={9}
         rowsPerPageOptions={[9]}
         checkboxSelection
@@ -76,4 +76,4 @@ const CompanyDatatable = () => {
   );
 };
 
-export default CompanyDatatable;
+export default GroupDatatable;

@@ -1,13 +1,13 @@
 import "./kladesDatatable.scss";
 import { DataGrid } from "@mui/x-data-grid";
-import { userColumns, userRows } from "../../datasets/kladersdatatablesource";
+import { kladerColumns, kladerRows } from "../../datasets/kladersdatatablesource";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 
 const KladersDatatable = () => {
-  const [data, setData] = useState(userRows);
+  const [data, setData] = useState(kladerRows);
   const { t } = useTranslation();
 
   const handleDelete = (id) => {
@@ -26,7 +26,7 @@ const KladersDatatable = () => {
     {
       field: "action",
       headerName: t("datatable.action"),
-      width: 200,
+      width: 220,
       renderCell: (params) => {
         return (
           <div className="cellAction">
@@ -67,7 +67,7 @@ const KladersDatatable = () => {
       <DataGrid
         className="datagrid"
         rows={data}
-        columns={userColumns.concat(actionColumn)}
+        columns={kladerColumns.concat(actionColumn)}
         pageSize={9}
         rowsPerPageOptions={[9]}
         checkboxSelection
