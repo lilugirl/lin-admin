@@ -25,4 +25,4 @@ after success type npm start
 
 go to localhost:3000 and start extending.
 
-pull requests will be accepted.
+pull requests or contribution requests will be accepted.
