@@ -1,68 +1,85 @@
-.app.dark{
+.app.dark {
     background-color: #111;
-    color:rgb(156,156,156);
+    color: rgb(156, 156, 156);
 
-    .chartGrid{
-        stroke:rgba(228,228,228,0.219);
+    .chartGrid {
+        stroke: rgba(228, 228, 228, 0.219);
     }
 
-    .table{
+    .table {
         background-color: #111;
-        .tableCell{
-            color:gray;
+        .tableCell {
+            color: gray;
         }
     }
 
-    .navbar{
-        color:#999;
-        border-color:#333;
-
-        .search{
-            border-color:gray;
+    .navbar {
+        color: #999;
+        border-color: #333;
+        .navbar__toggle-btn {
+            color: #999;
+        }
+        .dropdown_lang {
+            .dropbtn_lang {
+                color: #999;
+            }
+        }
+        .search {
+            border-color: gray;
         }
     }
 
-    .sidebar{
+    .sidebar {
         background-color: #111;
         border-color: #333;
 
-        .top{
-            .logo{
-                color:#999;
+        .top {
+            .logo {
+                color: #999;
             }
         }
 
-        hr{
+        hr {
             border-color: #333;
         }
 
-        ul{
-            li{
-                &:hover{
+        ul {
+            li {
+                &:hover {
                     background-color: #333;
                 }
 
-                .icon{
-                    color:#999;
+                .icon {
+                    color: #999;
                 }
             }
         }
     }
 
-    .datatable{
-        .datagrid{
-            color:gray;
-            border:none;
+    .datatable {
+        .datagrid {
+            color: gray;
+            border: none;
 
-            .viewButton,.deleteButton,.cellWithStatus{
-                color:gray;
-                border:none;
+            .viewButton,
+            .deleteButton,
+            .cellWithStatus {
+                color: gray;
+                border: none;
             }
         }
     }
 
-    input{
+    input,
+    select,
+    textarea,
+    .maltiSelect,
+    .input-group,
+    .sub_section_title,
+    .formations_details,
+    .experiences_details,
+    .css-13cymwt-control {
         background-color: transparent;
+        color: #999;
     }
-
 }

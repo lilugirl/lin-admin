@@ -1,0 +1,24 @@
+{
+    "associationName": "Example Association",
+    "registrationNumber": "123456789",
+    "industry": "Non-profit",
+    "website": "https://example.com",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "contactName": "John Doe",
+    "contactEmail": "john.doe@example.com",
+    "contactPhone": "123-456-7890",
+    "address": "123 Main St",
+    "city": "Anytown",
+    "state": "State",
+    "postalCode": "12345",
+    "country": "Country",
+    "numberOfMembers": "1000",
+    "yearFounded": "2000",
+    "annualBudget": "$1,000,000",
+    "logo": null,
+    "email": "admin@example.com",
+    "password": "password123",
+    "confirmPassword": "password123",
+    "terms": true
+  }
+  

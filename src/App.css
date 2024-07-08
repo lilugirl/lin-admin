@@ -1,0 +1,12 @@
+* {
+    padding: 0;
+    margin: 0;
+    transition: all 0.1s;
+  }
+
+  body {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+ 

@@ -1,0 +1,12 @@
+{
+    "profileImageUrl": "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+    "accessRight": "user",
+    "username": "johndoe",
+    "gender": "male",
+    "nameAndSurname": "John Doe",
+    "email": "johndoe@example.com",
+    "phone": "123-456-7890",
+    "password": "password123",
+    "address": "123 Main St, Anytown, USA",
+    "country": "USA"
+}

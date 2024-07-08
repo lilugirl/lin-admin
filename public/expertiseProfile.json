@@ -1,0 +1,13 @@
+{
+    "biography": "Sample biography",
+    "companyName": "Sample Company",
+    "address": "123 Sample St.",
+    "website": "www.sample.com",
+    "email": "contact@sample.com",
+    "phoneNumber": "123-456-7890",
+    "sirenNumber": "123456789",
+    "vigilanceCertificate": "path/to/vigilanceCertificate.pdf",
+    "taxRegularityCertificate": "path/to/taxRegularityCertificate.pdf",
+    "honorCertificate": "path/to/honorCertificate.pdf"
+  }
+  

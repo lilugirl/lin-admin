@@ -1,0 +1,177 @@
+.Add_new_user {
+    form {
+        .new_title {
+            font-size: 24px;
+            color: gray;
+            gap: 20px;
+            padding: 10px;
+            margin: 20px;
+        }
+
+        .gernal_information_section {
+            box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+            margin: 20px;
+            display: grid;
+            grid-template-columns: 1fr; /* Default to a single column */
+            gap: 20px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+
+            .sub_section_title {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 2rem;
+                border-bottom: 1px solid #ccc;
+
+                > div {
+                    display: flex;
+                    align-items: center;
+                    .icon {
+                        margin: 5px 10px 0px 0px; /* Adjust margin as needed */
+                    }
+                }
+            }
+            .gernal_information_details {
+                display: grid;
+                grid-template-columns: 1fr; /* Default to a single column */
+                gap: 15px;
+                padding: 0 2rem 2rem 2rem;
+                .left {
+                    text-align: center;
+
+                    img {
+                        width: 150px;
+                        height: 150px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                }
+
+                .right {
+                    display: grid;
+                    gap: 20px;
+
+                    .formInput {
+                        display: grid;
+                        gap: 5px;
+
+                        label {
+                            display: block;
+
+                            .icon {
+                                cursor: pointer;
+                            }
+                        }
+
+                        input.inputField {
+                            padding: 8px;
+                            border: 1px solid #ccc;
+                            border-radius: 4px;
+                            outline: none;
+                            transition: border-color 0.3s;
+
+                            &:focus {
+                                border-color: teal;
+                            }
+                            &:focus-visible {
+                                border-color: teal;
+                            }
+                        }
+                    }
+
+                    .input-group {
+                        margin-bottom: 15px;
+
+                        label {
+                            display: block;
+                            margin-bottom: 5px;
+                        }
+
+                        select,
+                        input[type="text"],
+                        input[type="password"],
+                        input[type="email"] {
+                            width: 100%;
+                            padding: 8px;
+                            box-sizing: border-box;
+                            border: 1px solid #ccc;
+                            border-radius: 4px;
+                            transition: border-color 0.3s;
+
+                            &:focus {
+                                border-color: teal;
+                            }
+                            &:focus-visible {
+                                border-color: teal;
+                            }
+                        }
+                    }
+                }
+
+                @media (min-width: 600px) {
+                    .right {
+                        grid-template-columns: 1fr 1fr; /* Adjust form layout to two columns */
+                        gap: 20px;
+
+                        .formInput {
+                            width: 100%; /* Full width within grid context */
+                        }
+                    }
+                }
+
+                @media (min-width: 900px) {
+                    grid-template-columns: 1fr 2fr; /* Adjust column ratio for larger screens */
+                }
+
+                @media (max-width: 599px) {
+                    .right {
+                        grid-template-columns: 1fr; /* Single column layout for form */
+                        gap: 20px;
+
+                        .formInput {
+                            width: 100%; /* Full width within grid context */
+                        }
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 768px) {
+            .gernal_information_section {
+                box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+                padding: 10px;
+                margin: 20px;
+                border: 1px solid #ccc;
+                border-radius: 20px;
+            }
+
+            .right {
+                .formInput {
+                    width: 100%; /* Stack inputs on smaller screens */
+                }
+            }
+        }
+        .add_new_user_submit_btn {
+            padding: 1rem;
+            text-align: end;
+            button {
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-left: 30px;
+                padding-right: 30px;
+                border: none;
+                background-color: teal;
+                color: white;
+                cursor: pointer;
+                border-radius: 4px;
+                transition: background-color 0.3s;
+                align-self: center;
+
+                &:hover {
+                    background-color: #00796b;
+                }
+            }
+        }
+    }
+}
